@@ -1,0 +1,136 @@
+@import '../../styles/_variables.scss';
+
+.header {
+  padding: 40px 0;
+  background-color: #FFFFFF;
+
+  .container {
+    max-width: 1636px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 18px;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+
+      }
+
+      .nav {
+        .navList {
+          display: flex;
+
+          .navListItem {
+            margin-right: 40px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            .navListItemLink {
+              font-size: 20px;
+              line-height: 23.5px;
+              color: $color-main;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+
+        .actionsSearch {
+          position: relative;
+          margin-right: 18px;
+          padding-left: 15px;
+          width: 376px;
+          height: 66px;
+          overflow: hidden;
+          border-radius: 36px;
+          display: flex;
+          align-items: center;
+          background-color: #FAFAFA;
+
+          .actionsSearchInput {
+            display: inline-flex;
+            width: 80%;
+            font-size: $size-text-main;
+            color: $color-main;
+            background-color: transparent;
+            border: none;
+            outline: none;
+          }
+
+          .actionsSearchButton {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 8px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: $color-acapulco;
+            border: none;
+            cursor: pointer;
+            transition: background-color .2s ease-in-out;
+
+            &:hover {
+              background-color: #5aa174;
+            }
+
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+
+        .actionsCart {
+          padding-left: 8px;
+          display: flex;
+          align-items: center;
+          width: 159px;
+          height: 66px;
+          border: 1px solid $color-main;
+          border-radius: 36px;
+
+          .actionsCartButton {
+            position: relative;
+            margin-right: 12px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: $color-main;
+            border: none;
+            cursor: pointer;
+            transition: background-color .2s ease-in-out;
+
+            &:hover {
+              background-color: #152a33;
+            }
+
+            img {
+              position: absolute;
+              top: 50%;
+              left: 48%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          .actionsCartAmount {
+            font-size: $size-text-main;
+            font-weight: 500;
+            color: $color-main;
+          }
+        }
+      }
+    }
+  }
+}

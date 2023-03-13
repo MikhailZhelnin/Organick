@@ -1,0 +1,85 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.product {
+  margin-bottom: 40px;
+  position: relative;
+  width: 335px;
+  height: 483px;
+  border-radius: 36px;
+  overflow: hidden;
+
+  .productCategory {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 8px 15px;
+    background-color: $color-main;
+    border-radius: 10px;
+
+    .productCategoryText {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+  }
+
+  .productImage {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .productInfo {
+    position: absolute;
+    bottom: 17px;
+    left: 30px;
+    width: 81%;
+
+    .productInfoTitle {
+      position: relative;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23px;
+      color: $color-main;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -11px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #B8B8B8;
+      }
+    }
+
+    .productInfoBottom {
+      display: flex;
+      justify-content: space-between;
+
+      .productInfoBottomLeft {
+        .productInfoBottomLeftPrice {
+          margin-right: 7px;
+          font-size: 16px;
+          color: #B8B8B8;
+          text-decoration: line-through;
+        }
+
+        .productInfoBottomLeftDiscount {
+          font-size: 18px;
+          line-height: 24.5px;
+          color: $color-main;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

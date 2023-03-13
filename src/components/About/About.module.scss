@@ -1,0 +1,89 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.about {
+  margin-bottom: 154px;
+  padding: 154px 0;
+  background-color: $color-saltpan;
+
+  .container {
+    @include container;
+
+    .content {
+      max-width: 1000px;
+      .overhead {
+        margin-bottom: 8px;
+        font-size: 36px;
+        line-height: 49px;
+        color: $color-acapulco;
+      }
+
+      .title {
+        margin-bottom: 14px;
+        font-size: $size-heading-h2;
+        font-weight: 700;
+        line-height: 59px;
+        color: $color-main;
+      }
+
+      .text {
+        margin-bottom: 46px;
+
+        p {
+          font-size: $size-text-main;
+          font-weight: 300;
+          color: $color-abbey;
+        }
+      }
+
+      .list {
+        margin-bottom: 46px;
+
+        .listItem {
+          margin-bottom: 30px;
+          display: flex;
+          align-items: center;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .listItemImage {
+            position: relative;
+            margin-right: 19px;
+            width: 101px;
+            height: 101px;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          .listItemContent {
+            max-width: 400px;
+            .listItemContentTitle {
+              margin-bottom: 7px;
+              font-size: $size-heading-h6;
+              font-weight: 700;
+              line-height: 29px;
+              color: $color-main;
+            }
+
+            .listItemContentText {
+              p {
+                font-size: $size-text-main;
+                font-weight: 300;
+                color: $color-abbey;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

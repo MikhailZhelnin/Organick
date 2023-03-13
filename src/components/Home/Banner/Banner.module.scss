@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.banner {
+  margin-bottom: 154px;
+  padding: 180px 0;
+  width: 100%;
+  background-image: url("../../../../public/assets/images/Banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    @include container;
+
+    .content {
+      max-width: 530px;
+      width: 100%;
+
+      .overhead {
+        margin-bottom: 8px;
+        font-size: $size-heading-h4;
+        line-height: 49px;
+        color: $color-acapulco;
+      }
+
+      .title {
+        margin-bottom: 23px;
+        font-size: $size-heading-h1;
+        line-height: 82px;
+        font-weight: 700;
+        color: $color-main;
+      }
+
+      .button {
+
+        .buttonText {
+
+        }
+      }
+    }
+  }
+}

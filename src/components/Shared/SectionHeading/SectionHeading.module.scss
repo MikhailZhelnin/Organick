@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+
+  &.sectionTitleCenter {
+    align-items: center;
+  }
+
+  &.sectionTitleLeft {
+    align-items: flex-start;
+  }
+
+  .sectionTitleOverhead {
+    font-size: 36px;
+    line-height: 49px;
+    color: $color-acapulco;
+  }
+
+  .sectionTitleTitle {
+    font-size: $size-heading-h2;
+    font-weight: 700;
+    line-height: 59px;
+    color: $color-main;
+  }
+}

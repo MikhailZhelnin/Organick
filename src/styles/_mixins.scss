@@ -1,0 +1,53 @@
+@import '../styles/_variables.scss';
+
+// Container
+@mixin container {
+  max-width: 1436px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+// Buttons
+@mixin btn {
+  padding: 28px 39px;
+  display: flex;
+  align-items: center;
+  font-size: $size-button;
+  line-height: 23.5px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+}
+
+@mixin btn-main {
+  @include btn;
+  color: #FFFFFF;
+  background-color: $color-btn-bg-main;
+
+  &:hover {
+    background-color: $color-btn-bg-main-hover;
+  }
+}
+
+@mixin btn-secondary {
+  @include btn;
+  color: $color-main;
+  background-color: $color-btn-bg-secondary;
+
+  &:hover {
+    background-color: $color-btn-bg-secondary-hover;
+  }
+}
+
+@mixin btn-third {
+  @include btn;
+  color: $color-main;
+  background-color: #FFFFFF;
+  border: 1px solid $color-btn-bg-third;
+
+  &:hover {
+    background-color: $color-btn-bg-third-hover;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../../styles/mixins';
+
+.categories {
+  margin-bottom: 176px;
+
+  .container {
+    @include container;
+
+    .content {
+      .button {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
