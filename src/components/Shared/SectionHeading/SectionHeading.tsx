@@ -12,9 +12,10 @@ interface SectionHeadingProps {
   title: string
   position?: 'center' | 'left'
   marginBottom?: string
+  titleColor?: string
 }
 
-const SectionHeading = ({overhead, title, position = 'center', marginBottom = '40px'}: SectionHeadingProps) => {
+const SectionHeading = ({overhead, title, position = 'center', marginBottom = '40px', titleColor}: SectionHeadingProps) => {
   return (
     <div
       style={{marginBottom: marginBottom}}
@@ -22,7 +23,7 @@ const SectionHeading = ({overhead, title, position = 'center', marginBottom = '4
       {overhead &&
           <span className={`${styles.sectionTitleOverhead} ${yellowtail.className}`}>{overhead}</span>
       }
-      <h2 className={styles.sectionTitleTitle}>{title}</h2>
+      <h2 className={styles.sectionTitleTitle} style={{color: titleColor}}>{title}</h2>
 
     </div>
   )

@@ -6,13 +6,25 @@
   position: relative;
   width: 335px;
   height: 483px;
+  border: 1px solid transparent;
   border-radius: 36px;
   overflow: hidden;
+  transition: border-color .2s ease-in-out;
+
+  &:hover {
+    border-color: #B8B8B8;
+    .productImage {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
 
   .productCategory {
     position: absolute;
     top: 30px;
     left: 30px;
+    z-index: 5;
     padding: 8px 15px;
     background-color: $color-main;
     border-radius: 10px;
@@ -33,6 +45,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all .2s ease-in-out;
     }
   }
 
@@ -40,6 +53,7 @@
     position: absolute;
     bottom: 17px;
     left: 30px;
+    z-index: 5;
     width: 81%;
 
     .productInfoTitle {

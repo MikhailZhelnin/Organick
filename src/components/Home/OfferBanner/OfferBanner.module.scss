@@ -2,7 +2,7 @@
 @import '../../../styles/mixins';
 
 .offerBanner {
-  margin-bottom: 154px;
+  padding: 154px 0;
 
   .container {
     @include container;

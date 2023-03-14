@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import {icons} from "../../../../public/assets/icons/icons";
 
 import styles from './Button.module.scss';
-import Link from "next/link";
 
 interface ButtonProps {
   btnType: "main" | "secondary" | 'third'

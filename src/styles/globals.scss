@@ -17,3 +17,11 @@ a {
 ul li {
   list-style-type: none;
 }
+
+.swiper-pagination-bullet {
+  background-color: #C4C4C4;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #7EB693;
+}
