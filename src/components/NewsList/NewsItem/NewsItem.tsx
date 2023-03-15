@@ -8,7 +8,6 @@ import {icons} from "../../../../public/assets/icons/icons";
 import {INews} from "@/global/interfaces/INews";
 
 import styles from './NewsItem.module.scss'
-import Link from "next/link";
 
 interface NewsItemProps {
   newsItem: INews,
@@ -16,7 +15,7 @@ interface NewsItemProps {
 
 const NewsItem = ({newsItem}: NewsItemProps) => {
   return (
-    <Link href='/' className={styles.newsItem}>
+    <div className={styles.newsItem}>
       <div className={styles.newsItemImage}>
         <Image
           src={urlFor(newsItem.image).url()}
@@ -40,7 +39,7 @@ const NewsItem = ({newsItem}: NewsItemProps) => {
         </div>
         <Button btnType='secondary' text='Read More' asLink link='/'/>
       </div>
-    </Link>
+    </div>
   )
 }
 
