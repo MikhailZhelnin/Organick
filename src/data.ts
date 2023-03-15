@@ -1,6 +1,8 @@
 import {IOffer} from "@/global/interfaces/IOffer";
 import {IAboutFeature} from "@/global/interfaces/IAboutFeature";
-import {ITestimonialsFeature} from "@/global/interfaces/ITestimonialsFeatures";
+import {ITestimonialsFeature} from "@/global/interfaces/ITestimonialsFeature";
+import {IWhoWeAreFeature} from "@/global/interfaces/IWhoWeAreFeature";
+import {IGallery} from "@/global/interfaces/IGallery";
 
 import {images} from "../public/assets/images/images";
 import {icons} from "../public/assets/icons/icons";
@@ -55,5 +57,41 @@ export const testimonialsFeaturesData: ITestimonialsFeature[] = [
     id: 4,
     title: '25+',
     text: 'Years of Farming',
+  },
+]
+
+export const whoWeAreFeaturesData: IWhoWeAreFeature[] = [
+  {
+    id: 1,
+    title: 'Start with Our Company First',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.',
+  },
+  {
+    id: 2,
+    title: 'Learn How to Grow Yourself',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.',
+  },
+  {
+    id: 3,
+    title: 'Farming Strategies of Today',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.',
+  },
+]
+
+export const galleryData: IGallery[] = [
+  {
+    id: 1,
+    title: 'Organic Juice',
+    image: images.gallery.one,
+  },
+  {
+    id: 2,
+    title: 'Organic Food',
+    image: images.gallery.two,
+  },
+  {
+    id: 3,
+    title: 'Nuts Cookies',
+    image: images.gallery.three,
   },
 ]

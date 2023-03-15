@@ -10,10 +10,12 @@ import OfferBanner from "@/components/Home/OfferBanner/OfferBanner";
 import About from "@/components/About/About";
 import Categories from "@/components/Home/Categories/Categories";
 import Testimonials from "@/components/Home/Testimonials/Testimonials";
+import Offer from "@/components/Home/Offer/Offer";
+import WhoWeAre from "@/components/Home/WhoWeAre/WhoWeAre";
+import Gallery from "@/components/Home/Gallery/Gallery";
 
 import {IProduct} from "@/global/interfaces/IProduct";
 import {ITestimonial} from "@/global/interfaces/ITestimonial";
-import Offer from "@/components/Home/Offer/Offer";
 
 interface HomeProps {
   products: IProduct[]
@@ -30,6 +32,8 @@ export default function Home({products, testimonials}: HomeProps) {
       <Categories products={products}/>
       <Testimonials testimonials={testimonials}/>
       <Offer products={products}/>
+      <WhoWeAre/>
+      <Gallery/>
     </Main>
   )
 }
