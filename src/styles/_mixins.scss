@@ -45,7 +45,7 @@
   @include btn;
   color: $color-main;
   background-color: #FFFFFF;
-  border: 1px solid $color-btn-bg-third;
+  border: 2px solid $color-btn-bg-main;
 
   &:hover {
     background-color: $color-btn-bg-third-hover;

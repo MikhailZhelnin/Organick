@@ -6,5 +6,6 @@ export const icons = {
   aboutFeatures: {
     one: require('./About-features-1.svg').default,
     two: require('./About-features-2.svg').default,
-  }
+  },
+  user: require('./User.svg').default,
 }
