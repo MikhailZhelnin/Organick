@@ -1,0 +1,54 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.subscribe {
+  padding: 0 0 146px 0;
+
+  .container {
+    @include container;
+
+    .content {
+      padding: 105px 71px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 36px;
+      overflow: hidden;
+      background-image: url("../../../public/assets/images/Subscribe-bg.png");
+      background-size: cover;
+
+      .text {
+        max-width: 357px;
+
+        h2 {
+          font-size: $size-heading-h2;
+          font-weight: 700;
+          line-height: 58px;
+          color: #FFFFFF;
+        }
+      }
+
+      .form {
+        display: flex;
+
+        .formInput {
+          width: 349px;
+          margin-right: 6px;
+          padding: 0 23px;
+          font-size: $size-text-main;
+          line-height: 21px;
+          font-style: italic;
+          font-weight: 300;
+          color: $color-abbey;
+          outline: none;
+          border: none;
+          border-radius: 16px;
+        }
+
+        .formButton {
+          @include btn-main;
+        }
+      }
+    }
+  }
+}

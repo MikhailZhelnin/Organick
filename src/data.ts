@@ -3,6 +3,9 @@ import {IAboutFeature} from "@/global/interfaces/IAboutFeature";
 import {ITestimonialsFeature} from "@/global/interfaces/ITestimonialsFeature";
 import {IWhoWeAreFeature} from "@/global/interfaces/IWhoWeAreFeature";
 import {IGallery} from "@/global/interfaces/IGallery";
+import {IFooterContact} from "@/global/interfaces/IFooterContact";
+import {IFooterSocial} from "@/global/interfaces/IFooterSocial";
+import {IFooterPage} from "@/global/interfaces/IFooterPage";
 
 import {images} from "../public/assets/images/images";
 import {icons} from "../public/assets/icons/icons";
@@ -93,5 +96,78 @@ export const galleryData: IGallery[] = [
     id: 3,
     title: 'Nuts Cookies',
     image: images.gallery.three,
+  },
+]
+
+export const footerContactsData: IFooterContact[] = [
+  {
+    id: 1,
+    title: "Email",
+    text: 'needhelp@Organia.com',
+  },
+  {
+    id: 2,
+    title: "Phone",
+    text: '666 888 888',
+  },
+  {
+    id: 3,
+    title: "Address",
+    text: '88 road, brooklyn street, USA',
+  },
+]
+
+export const footerSocialsData: IFooterSocial[] = [
+  {
+    id: 1,
+    name: 'Instagram',
+    icon: icons.socials.instagram,
+    link: 'https://www.instagram.com',
+  },
+  {
+    id: 2,
+    name: 'Facebook',
+    icon: icons.socials.facebook,
+    link: 'https://www.facebook.com',
+  },
+  {
+    id: 3,
+    name: 'Twitter',
+    icon: icons.socials.twitter,
+    link: 'https://twitter.com',
+  },
+  {
+    id: 4,
+    name: 'Pinterest',
+    icon: icons.socials.pinterest,
+    link: 'https://www.pinterest.com',
+  },
+]
+
+export const footerPagesData: IFooterPage[] = [
+  {
+    id: 1,
+    text: 'Style Guide',
+    link: '/',
+  },
+  {
+    id: 2,
+    text: '404 Not Found',
+    link: '/',
+  },
+  {
+    id: 3,
+    text: 'Password Protected',
+    link: '/',
+  },
+  {
+    id: 4,
+    text: 'Licences',
+    link: '/',
+  },
+  {
+    id: 5,
+    text: 'Changelog',
+    link: '/',
   },
 ]

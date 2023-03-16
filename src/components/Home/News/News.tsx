@@ -21,6 +21,7 @@ const News = ({news}: NewsProps) => {
               title='Discover weekly content about organic food & more'
               position='left'
               marginBottom='0px'
+              maxWidth='702px'
             />
             <Button btnType='third' text='More News' asLink link='/'/>
           </div>

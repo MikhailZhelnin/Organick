@@ -14,6 +14,7 @@ import Offer from "@/components/Home/Offer/Offer";
 import WhoWeAre from "@/components/Home/WhoWeAre/WhoWeAre";
 import Gallery from "@/components/Home/Gallery/Gallery";
 import News from "@/components/Home/News/News";
+import Subscribe from "@/components/Subscribe/Subscribe";
 
 import {IProduct} from "@/global/interfaces/IProduct";
 import {ITestimonial} from "@/global/interfaces/ITestimonial";
@@ -38,6 +39,7 @@ export default function Home({products, testimonials, news}: HomeProps) {
       <WhoWeAre/>
       <Gallery/>
       <News news={news}/>
+      <Subscribe/>
     </Main>
   )
 }

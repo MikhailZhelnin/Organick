@@ -8,4 +8,10 @@ export const icons = {
     two: require('./About-features-2.svg').default,
   },
   user: require('./User.svg').default,
+  socials: {
+    instagram: require('./Instagram.svg').default,
+    facebook: require('./Facebook.svg').default,
+    twitter: require('./Twiter.svg').default,
+    pinterest: require('./Pintrest.svg').default,
+  }
 }
