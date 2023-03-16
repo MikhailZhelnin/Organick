@@ -1,4 +1,4 @@
-import {IProduct} from "@/global/interfaces/IProduct";
+import {IProduct} from "../../global/interfaces/index";
 
 import Product from "@/components/Products/Product/Product";
 

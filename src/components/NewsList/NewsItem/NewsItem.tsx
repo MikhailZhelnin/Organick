@@ -5,7 +5,7 @@ import Button from "@/components/Shared/Button/Button";
 import {urlFor} from "@/helpers/urlFor";
 import {icons} from "../../../../public/assets/icons/icons";
 
-import {INews} from "@/global/interfaces/INews";
+import {INews} from "../../../global/interfaces/index";
 
 import styles from './NewsItem.module.scss'
 

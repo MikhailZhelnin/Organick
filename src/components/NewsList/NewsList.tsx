@@ -1,4 +1,4 @@
-import {INews} from "@/global/interfaces/INews";
+import {INews} from "../../global/interfaces/index";
 
 import NewsItem from "@/components/NewsList/NewsItem/NewsItem";
 

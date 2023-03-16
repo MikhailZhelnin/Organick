@@ -4,7 +4,7 @@ import {Autoplay, Pagination} from 'swiper';
 import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
 import Testimonial from "@/components/Home/Testimonials/Testimonial/Testimonial";
 
-import {ITestimonial} from "@/global/interfaces/ITestimonial";
+import {ITestimonial} from "../../../global/interfaces/index";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -16,7 +16,7 @@ interface TestimonialsProps {
   testimonials: ITestimonial[]
 }
 
-const Testimonials = ({testimonials}: TestimonialsProps) => {
+export const Testimonials = ({testimonials}: TestimonialsProps) => {
   return (
     <section className={styles.testimonials}>
       <div className={styles.container}>
@@ -51,5 +51,3 @@ const Testimonials = ({testimonials}: TestimonialsProps) => {
     </section>
   )
 }
-
-export default Testimonials;

@@ -1,4 +1,4 @@
-import {IProduct} from "@/global/interfaces/IProduct";
+import {IProduct} from "../../../global/interfaces/index";
 
 import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
 import Button from "@/components/Shared/Button/Button";
@@ -10,7 +10,7 @@ interface OfferProps {
   products: IProduct[],
 }
 
-const Offer = ({products}: OfferProps) => {
+export const Offer = ({products}: OfferProps) => {
 
   const filteredProducts = products.filter(product => product.category.toLowerCase() === 'vegetable').slice(0, 4)
 
@@ -34,5 +34,3 @@ const Offer = ({products}: OfferProps) => {
     </section>
   )
 }
-
-export default Offer;

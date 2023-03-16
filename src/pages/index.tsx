@@ -5,20 +5,11 @@ import {Meta} from "@/layout/Meta";
 
 import client from '../../client'
 
-import Banner from "@/components/Home/Banner/Banner";
-import OfferBanner from "@/components/Home/OfferBanner/OfferBanner";
+import {Banner, OfferBanner, Categories, Testimonials, Offer, WhoWeAre, Gallery, News} from '../components/Home/index';
 import About from "@/components/About/About";
-import Categories from "@/components/Home/Categories/Categories";
-import Testimonials from "@/components/Home/Testimonials/Testimonials";
-import Offer from "@/components/Home/Offer/Offer";
-import WhoWeAre from "@/components/Home/WhoWeAre/WhoWeAre";
-import Gallery from "@/components/Home/Gallery/Gallery";
-import News from "@/components/Home/News/News";
 import Subscribe from "@/components/Subscribe/Subscribe";
 
-import {IProduct} from "@/global/interfaces/IProduct";
-import {ITestimonial} from "@/global/interfaces/ITestimonial";
-import {INews} from "@/global/interfaces/INews";
+import {IProduct, ITestimonial, INews} from '../global/interfaces/index'
 
 interface HomeProps {
   products: IProduct[]
@@ -80,9 +71,9 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      products: products,
-      testimonials: testimonials,
-      news: news
+      products,
+      testimonials,
+      news
     }
   }
 }

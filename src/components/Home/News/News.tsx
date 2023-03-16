@@ -2,7 +2,7 @@ import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
 import Button from "@/components/Shared/Button/Button";
 import NewsList from "@/components/NewsList/NewsList";
 
-import {INews} from "@/global/interfaces/INews";
+import {INews} from "../../../global/interfaces/index";
 
 import styles from './News.module.scss'
 
@@ -10,7 +10,7 @@ interface NewsProps {
   news: INews[],
 }
 
-const News = ({news}: NewsProps) => {
+export const News = ({news}: NewsProps) => {
   return (
     <section className={styles.news}>
       <div className={styles.container}>
@@ -31,5 +31,3 @@ const News = ({news}: NewsProps) => {
     </section>
   )
 }
-
-export default News;

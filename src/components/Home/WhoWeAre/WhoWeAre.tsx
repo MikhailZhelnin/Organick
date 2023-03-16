@@ -8,7 +8,7 @@ import {images} from "../../../../public/assets/images/images";
 
 import styles from './WhoWeAre.module.scss'
 
-const WhoWeAre = () => {
+export const WhoWeAre = () => {
   return (
     <section className={styles.whoWeAre}>
       <div className={styles.content}>
@@ -39,5 +39,3 @@ const WhoWeAre = () => {
     </section>
   )
 }
-
-export default WhoWeAre;

@@ -1,0 +1,12 @@
+export * from './IAboutFeature'
+export * from './IFooterContact'
+export * from './IFooterPage'
+export * from './IFooterSocial'
+export * from './IGallery'
+export * from './INews'
+export * from './IOffer'
+export * from './IProduct'
+export * from './ITestimonial'
+export * from './ITestimonialsFeature'
+export * from './IWhoWeAreFeature'
+

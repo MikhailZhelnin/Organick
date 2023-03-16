@@ -1,11 +1,13 @@
-import {IOffer} from "@/global/interfaces/IOffer";
-import {IAboutFeature} from "@/global/interfaces/IAboutFeature";
-import {ITestimonialsFeature} from "@/global/interfaces/ITestimonialsFeature";
-import {IWhoWeAreFeature} from "@/global/interfaces/IWhoWeAreFeature";
-import {IGallery} from "@/global/interfaces/IGallery";
-import {IFooterContact} from "@/global/interfaces/IFooterContact";
-import {IFooterSocial} from "@/global/interfaces/IFooterSocial";
-import {IFooterPage} from "@/global/interfaces/IFooterPage";
+import {
+  IOffer,
+  IAboutFeature,
+  ITestimonialsFeature,
+  IWhoWeAreFeature,
+  IGallery,
+  IFooterContact,
+  IFooterSocial,
+  IFooterPage
+} from './global/interfaces/index'
 
 import {images} from "../public/assets/images/images";
 import {icons} from "../public/assets/icons/icons";

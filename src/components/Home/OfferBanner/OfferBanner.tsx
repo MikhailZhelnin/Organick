@@ -10,7 +10,7 @@ const yellowtail = Yellowtail({
   subsets: ['latin'],
 })
 
-const OfferBanner = () => {
+export const OfferBanner = () => {
     return (
         <div className={styles.offerBanner}>
             <div className={styles.container}>
@@ -29,5 +29,3 @@ const OfferBanner = () => {
         </div>
     )
 }
-
-export default OfferBanner;

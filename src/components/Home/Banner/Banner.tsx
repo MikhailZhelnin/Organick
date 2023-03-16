@@ -9,7 +9,7 @@ const yellowtail = Yellowtail({
   subsets: ['latin'],
 })
 
-const Banner = () => {
+export const Banner = () => {
     return (
         <section className={styles.banner} >
             <div className={styles.container}>
@@ -22,5 +22,3 @@ const Banner = () => {
         </section>
     )
 }
-
-export default Banner;

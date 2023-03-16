@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {Rating} from 'react-simple-star-rating'
 
-import {IProduct} from "@/global/interfaces/IProduct";
+import {IProduct} from "../../../global/interfaces/index";
 
 import {urlFor} from "@/helpers/urlFor";
 

@@ -4,7 +4,7 @@ import {galleryData} from "@/data";
 
 import styles from './Gallery.module.scss'
 
-const Gallery = () => {
+export const Gallery = () => {
     return (
         <div className={styles.gallery}>
           <div className={styles.content}>
@@ -22,5 +22,3 @@ const Gallery = () => {
         </div>
     )
 }
-
-export default Gallery;

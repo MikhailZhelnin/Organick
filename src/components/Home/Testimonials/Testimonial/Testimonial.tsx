@@ -3,7 +3,7 @@ import {Rating} from 'react-simple-star-rating'
 
 import {urlFor} from "@/helpers/urlFor";
 
-import {ITestimonial} from "@/global/interfaces/ITestimonial";
+import {ITestimonial} from "../../../../global/interfaces/index";
 
 import styles from './Testimonial.module.scss'
 

@@ -1,4 +1,4 @@
-import {IProduct} from "@/global/interfaces/IProduct";
+import {IProduct} from "../../../global/interfaces/index";
 
 import Products from "@/components/Products/Products";
 import Button from "@/components/Shared/Button/Button";
@@ -10,7 +10,7 @@ interface CategoriesProps {
   products: IProduct[],
 }
 
-const Categories = ({products}: CategoriesProps) => {
+export const Categories = ({products}: CategoriesProps) => {
     return (
         <section className={styles.categories}>
           <div className={styles.container}>
@@ -30,5 +30,3 @@ const Categories = ({products}: CategoriesProps) => {
         </section>
     )
 }
-
-export default Categories;
