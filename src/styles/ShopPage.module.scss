@@ -1,0 +1,7 @@
+@import './mixins';
+
+.container {
+  @include container;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}

@@ -1,0 +1,178 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.shopSingle {
+  padding: 164px 0;
+
+  .container {
+    @include container;
+
+    .content {
+      .top {
+        margin-bottom: 90px;
+        display: flex;
+        align-items: center;
+
+        .topImage {
+          position: relative;
+          width: 45%;
+          height: 563px;
+          border-radius: 36px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .topCategory {
+            position: absolute;
+            top: 35px;
+            left: 35px;
+            padding: 8px 15px;
+            background-color: $color-main;
+            border-radius: 10px;
+
+            .topCategoryText {
+              font-size: 15px;
+              color: #FFFFFF;
+              font-weight: 500;
+              line-height: 20px;
+            }
+          }
+        }
+
+        .topInfo {
+          padding: 100px 0 100px 90px;
+          width: 55%;
+
+          .topInfoTitle {
+            margin-bottom: 10px;
+            font-size: $size-heading-h3;
+            font-weight: 700;
+            line-height: 46.8px;
+            color: $color-main;
+          }
+
+          .topInfoRating {
+            margin-bottom: 10px;
+          }
+
+          .topInfoPrice {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+
+            .topInfoPricePrice {
+              margin-right: 7px;
+              font-size: 20px;
+              color: #B8B8B8;
+              text-decoration: line-through;
+            }
+
+            .topInfoPriceDiscount {
+              font-size: 25px;
+              line-height: 24.5px;
+              color: $color-main;
+              font-weight: 700;
+            }
+          }
+
+          .topInfoText {
+            margin-bottom: 35px;
+
+            p {
+              font-size: $size-text-main;
+              font-weight: 300;
+              line-height: 29.7px;
+              color: $color-abbey;
+            }
+          }
+
+          .topInfoAction {
+            display: flex;
+            align-items: center;
+
+            .topInfoActionText {
+              margin-right: 22px;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23.4px;
+              color: $color-main;
+            }
+
+            .topInfoActionInput {
+              margin-right: 20px;
+              padding: 28px 0;
+              width: 134px;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 23.4px;
+              color: $color-main;
+              outline: none;
+              border: 2px solid $color-main;
+              border-radius: 16px;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .tabs {
+        max-width: 1137px;
+        margin: 0 auto;
+
+        .tabsHead {
+          margin-bottom: 27px;
+          display: flex;
+          justify-content: center;
+
+          .tabsHeadItemActive {
+            margin-right: 20px;
+            padding: 23px 57px;
+            background-color: $color-main;
+            border-radius: 16px;
+            cursor: pointer;
+
+            &.tabsHeadItem {
+              background-color: #EFF6F1;
+              h6 {
+                color: $color-main;
+              }
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            h6 {
+              font-size: $size-heading-h6;
+              font-weight: 700;
+              line-height: 34px;
+              color: #FFFFFF;
+            }
+          }
+        }
+
+        .tabsContent {
+          .tabsContentItemActive {
+            text-align: center;
+            display: block;
+
+            &.tabsContentItem {
+              display: none;
+            }
+
+            p {
+              font-size: $size-text-main;
+              font-weight: 300;
+              line-height: 29.7px;
+              color: $color-abbey;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,4 +9,5 @@ export * from './IProduct'
 export * from './ITestimonial'
 export * from './ITestimonialsFeature'
 export * from './IWhoWeAreFeature'
+export * from './IWhyChooseUsFeature'
 

@@ -4,12 +4,18 @@
 .about {
   padding: 154px 0;
   background-color: $color-saltpan;
+  background-image: url("../../../public/assets/images/About-bg.png");
+  background-size: cover;
+  background-position: right;
 
   .container {
     @include container;
+    display: flex;
+    justify-content: flex-end;
 
     .content {
-      max-width: 1000px;
+      width: 50%;
+
       .overhead {
         margin-bottom: 8px;
         font-size: 36px;

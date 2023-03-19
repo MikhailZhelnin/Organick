@@ -51,3 +51,11 @@
     background-color: $color-btn-bg-third-hover;
   }
 }
+
+// PageHeading Title
+@mixin page_heading-title {
+  font-size: $size-heading-h1;
+  font-weight: 700;
+  line-height: 82px;
+  color: $color-main;
+}

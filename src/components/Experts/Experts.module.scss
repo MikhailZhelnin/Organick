@@ -1,0 +1,30 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.experts {
+  padding: 164px 0;
+
+  .container {
+    @include container;
+
+    .content {
+      .text {
+        max-width: 852px;
+        margin: 0 auto 42px;
+        text-align: center;
+
+        p {
+          font-size: $size-text-main;
+          font-weight: 300;
+          line-height: 29.7px;
+          color: $color-abbey;
+        }
+      }
+
+      .list {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.relatedProducts {
+  margin-bottom: 146px;
+
+  .container {
+    @include container;
+  }
+}

@@ -13,5 +13,12 @@ export const icons = {
     facebook: require('./Facebook.svg').default,
     twitter: require('./Twiter.svg').default,
     pinterest: require('./Pintrest.svg').default,
+  },
+  circle: require('./Circle.svg').default,
+  why_choose_us: {
+    one: require('./WhyChooseUsFeature-1.svg').default,
+    two: require('./WhyChooseUsFeature-2.svg').default,
+    three: require('./WhyChooseUsFeature-3.svg').default,
+    four: require('./WhyChooseUsFeature-4.svg').default,
   }
 }

@@ -5,11 +5,11 @@ import {Meta} from "@/layout/Meta";
 
 import client from '../../client'
 
-import {Banner, OfferBanner, Categories, Testimonials, Offer, WhoWeAre, Gallery, News} from '../components/Home/index';
+import {Banner, OfferBanner, Categories, Testimonials, Offer, WhoWeAre, Gallery, News} from '@/components/HomePage';
 import About from "@/components/About/About";
 import Subscribe from "@/components/Subscribe/Subscribe";
 
-import {IProduct, ITestimonial, INews} from '../global/interfaces/index'
+import {IProduct, ITestimonial, INews} from '@/global/interfaces'
 
 interface HomeProps {
   products: IProduct[]
@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   `)
   const news = await client.fetch(`
-    *[_type == "news"] {
+    *[_type == "news"][0...2] {
       id,
       title,
       text,

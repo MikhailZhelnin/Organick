@@ -6,7 +6,8 @@ import {
   IGallery,
   IFooterContact,
   IFooterSocial,
-  IFooterPage
+  IFooterPage,
+  IWhyChooseUsFeature
 } from './global/interfaces/index'
 
 import {images} from "../public/assets/images/images";
@@ -171,5 +172,32 @@ export const footerPagesData: IFooterPage[] = [
     id: 5,
     text: 'Changelog',
     link: '/',
+  },
+]
+
+export const whyChooseUsFeatures: IWhyChooseUsFeature[] = [
+  {
+    id: 1,
+    icon: icons.why_choose_us.one,
+    title: 'Return Policy',
+    text: 'Simply dummy text of the printintypesetting industry.'
+  },
+  {
+    id: 2,
+    icon: icons.why_choose_us.two,
+    title: '100% Fresh',
+    text: 'Simply dummy text of the printintypesetting industry.'
+  },
+  {
+    id: 3,
+    icon: icons.why_choose_us.three,
+    title: 'Support 24/7',
+    text: 'Simply dummy text of the printintypesetting industry.'
+  },
+  {
+    id: 4,
+    icon: icons.why_choose_us.four,
+    title: 'Secured Payment',
+    text: 'Simply dummy text of the printintypesetting industry.'
   },
 ]

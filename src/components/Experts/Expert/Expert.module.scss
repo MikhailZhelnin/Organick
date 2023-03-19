@@ -1,0 +1,73 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.expert {
+  overflow: hidden;
+  border-radius: 36px;
+  transition: box-shadow .2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 20px 35px rgba(167, 167, 167, 0.25);
+
+    .expertImage {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    .expertInfo {
+      background-color: #FFFFFF;
+    }
+  }
+
+  .expertImage {
+    width: 449px;
+    height: 485px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all .2s ease-in-out;
+    }
+  }
+
+  .expertInfo {
+    padding: 35px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #F9F8F8;
+    transition: background-color .2s ease-in-out;
+
+    .expertInfoLeft {
+      .expertInfoLeftName {
+        margin-bottom: 5px;
+        font-size: $size-heading-h6;
+        font-weight: 700;
+        line-height: 29.3px;
+        color: $color-main;
+      }
+
+      .expertInfoLeftPosition {
+        font-size: 22px;
+        line-height: 29.9px;
+        color: $color-acapulco;
+      }
+    }
+
+    .expertInfoRight {
+      .expertInfoRightSocial {
+        margin-right: 17px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+
+        }
+      }
+    }
+  }
+}

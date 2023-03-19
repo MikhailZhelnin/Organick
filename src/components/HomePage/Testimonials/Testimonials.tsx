@@ -2,7 +2,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import {Autoplay, Pagination} from 'swiper';
 
 import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
-import Testimonial from "@/components/Home/Testimonials/Testimonial/Testimonial";
+import Testimonial from "@/components/HomePage/Testimonials/Testimonial/Testimonial";
 
 import {ITestimonial} from "../../../global/interfaces/index";
 

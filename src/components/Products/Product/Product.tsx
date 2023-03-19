@@ -14,7 +14,7 @@ interface ProductProps {
 
 const Product = ({product}: ProductProps) => {
   return (
-    <Link href='/' className={styles.product}>
+    <Link href={`/shop/${product.title}`} className={styles.product}>
       <div className={styles.productCategory}>
         <span className={styles.productCategoryText}>{product.category}</span>
       </div>

@@ -19,13 +19,13 @@ const Header = () => {
                                 <Link href='/' className={styles.navListItemLink}>Home</Link>
                             </li>
                             <li className={styles.navListItem}>
-                                <Link href='/' className={styles.navListItemLink}>About</Link>
+                                <Link href='/about-us' className={styles.navListItemLink}>About</Link>
                             </li>
                             <li className={styles.navListItem}>
                                 <Link href='/' className={styles.navListItemLink}>Pages</Link>
                             </li>
                             <li className={styles.navListItem}>
-                                <Link href='/' className={styles.navListItemLink}>Shop</Link>
+                                <Link href='/shop' className={styles.navListItemLink}>Shop</Link>
                             </li>
                             <li className={styles.navListItem}>
                                 <Link href='/' className={styles.navListItemLink}>Projects</Link>
