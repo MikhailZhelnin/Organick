@@ -44,7 +44,7 @@ const About = () => {
               </li>
             ))}
           </ul>
-          <Button btnType='main' text='Shop Now'/>
+          <Button btnType='main' text='Shop Now' asLink link='/shop'/>
         </div>
       </div>
     </section>

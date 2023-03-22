@@ -1,0 +1,27 @@
+@import '../../../../styles/_variables.scss';
+
+.navListItem {
+  margin-right: 40px;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .navListItemBtn {
+    font-size: 20px;
+    line-height: 23.5px;
+    color: $color-main;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .navListItemLink {
+    font-size: 20px;
+    line-height: 23.5px;
+    color: $color-main;
+    font-weight: 700;
+  }
+}

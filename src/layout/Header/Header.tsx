@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Navbar from "@/layout/Header/Navbar/Navbar";
+
 import {icons} from "../../../public/assets/icons/icons";
+
+import {menuItemsData} from "@/data";
 
 import styles from './Header.module.scss'
 
@@ -10,31 +14,10 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <div className={styles.logo}>
+                    <Link href='/'>
                         <Image src={icons.logo} alt='Logo icon'/>
-                    </div>
-                    <nav className={styles.nav}>
-                        <ul className={styles.navList}>
-                            <li className={styles.navListItem}>
-                                <Link href='/' className={styles.navListItemLink}>Home</Link>
-                            </li>
-                            <li className={styles.navListItem}>
-                                <Link href='/about-us' className={styles.navListItemLink}>About</Link>
-                            </li>
-                            <li className={styles.navListItem}>
-                                <Link href='/' className={styles.navListItemLink}>Pages</Link>
-                            </li>
-                            <li className={styles.navListItem}>
-                                <Link href='/shop' className={styles.navListItemLink}>Shop</Link>
-                            </li>
-                            <li className={styles.navListItem}>
-                                <Link href='/' className={styles.navListItemLink}>Projects</Link>
-                            </li>
-                            <li className={styles.navListItem}>
-                                <Link href='/' className={styles.navListItemLink}>News</Link>
-                            </li>
-                        </ul>
-                    </nav>
+                    </Link>
+                    <Navbar items={menuItemsData}/>
                     <div className={styles.actions}>
                         <form className={styles.actionsSearch}>
                             <input type='text' className={styles.actionsSearchInput}/>

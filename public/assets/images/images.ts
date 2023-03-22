@@ -14,6 +14,7 @@ export const images = {
     about_us: require('./PageHeading-AboutUs.png'),
     shop: require('./PageHeading-Shop.png'),
     shop_single: require('./PageHeading-ShopSingle.jpg'),
+    services: require('./PageHeading-Services.png'),
   },
   why_choose_us: require('./WhyChooseUs.png'),
 }

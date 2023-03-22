@@ -19,7 +19,7 @@ const Product = ({product}: ProductProps) => {
         <span className={styles.productCategoryText}>{product.category}</span>
       </div>
       <div className={styles.productImage}>
-        <Image src={urlFor(product.image).url()} alt={product.title} width={335} height={483}/>
+        <Image src={urlFor(product.image).width(335).height(483).quality(100).url()} alt={product.title} width={335} height={483}/>
       </div>
       <div className={styles.productInfo}>
         <h6 className={styles.productInfoTitle}>{product.title}</h6>

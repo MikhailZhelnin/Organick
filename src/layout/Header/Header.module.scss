@@ -15,31 +15,6 @@
       justify-content: space-between;
       align-items: center;
 
-      .logo {
-
-      }
-
-      .nav {
-        .navList {
-          display: flex;
-
-          .navListItem {
-            margin-right: 40px;
-
-            &:last-child {
-              margin-right: 0;
-            }
-
-            .navListItemLink {
-              font-size: 20px;
-              line-height: 23.5px;
-              color: $color-main;
-              font-weight: 700;
-            }
-          }
-        }
-      }
-
       .actions {
         display: flex;
         align-items: center;

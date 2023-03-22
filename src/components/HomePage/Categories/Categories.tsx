@@ -22,7 +22,7 @@ export const Categories = ({products}: CategoriesProps) => {
                   btnType='main'
                   text='Load More'
                   asLink
-                  link='/'
+                  link='/shop'
                 />
               </div>
             </div>

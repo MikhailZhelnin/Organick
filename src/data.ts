@@ -7,11 +7,72 @@ import {
   IFooterContact,
   IFooterSocial,
   IFooterPage,
-  IWhyChooseUsFeature
+  IWhyChooseUsFeature,
+  IMenuItem
 } from './global/interfaces/index'
 
 import {images} from "../public/assets/images/images";
 import {icons} from "../public/assets/icons/icons";
+
+export const menuItemsData: IMenuItem[] = [
+  {
+    id: 1,
+    title: 'Home',
+    link: '/',
+  },
+  {
+    id: 2,
+    title: 'About',
+    link: '/about-us',
+  },
+  {
+    id: 3,
+    title: 'Pages',
+    link: '/',
+    submenu: [
+      {
+        id: 1,
+        title: 'Services',
+        link: '/services',
+      },
+      {
+        id: 2,
+        title: 'Quality',
+        link: '/',
+      },
+      {
+        id: 3,
+        title: 'Portfolio',
+        link: '/',
+      },
+      {
+        id: 4,
+        title: 'Team',
+        link: '/',
+      },
+      {
+        id: 5,
+        title: 'Contact',
+        link: '/',
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: 'Shop',
+    link: '/shop',
+  },
+  {
+    id: 5,
+    title: 'Projects',
+    link: '/',
+  },
+  {
+    id: 6,
+    title: 'News',
+    link: '/',
+  },
+]
 
 export const offerData: IOffer[] = [
   {

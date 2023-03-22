@@ -26,7 +26,7 @@ export const Offer = ({products}: OfferProps) => {
               marginBottom='0px'
               titleColor='#FFFFFF'
             />
-            <Button btnType='secondary' text='View All Products' asLink link='/'/>
+            <Button btnType='secondary' text='View All Products' asLink link='/shop'/>
           </div>
           <Products products={filteredProducts}/>
         </div>
