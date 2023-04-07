@@ -15,7 +15,7 @@ interface NewsItemProps {
 
 const NewsItem = ({newsItem}: NewsItemProps) => {
   return (
-    <div className={styles.newsItem}>
+    <article className={styles.newsItem}>
       <div className={styles.newsItemImage}>
         <Image
           src={urlFor(newsItem.image).url()}
@@ -39,7 +39,7 @@ const NewsItem = ({newsItem}: NewsItemProps) => {
         </div>
         <Button btnType='secondary' text='Read More' asLink link='/'/>
       </div>
-    </div>
+    </article>
   )
 }
 

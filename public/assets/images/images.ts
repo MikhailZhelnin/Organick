@@ -15,10 +15,16 @@ export const images = {
     shop: require('./PageHeading-Shop.png'),
     shop_single: require('./PageHeading-ShopSingle.jpg'),
     services: require('./PageHeading-Services.png'),
+    quality: require('./PageHeading-QualityStandard.jpg'),
   },
   why_choose_us: require('./WhyChooseUs.png'),
   services: {
     pack: require('./Services-pack.png'),
     video_bg: require('./Services-video-bg.png'),
   },
+  quality_standard: {
+    main: require('./QualityStandard-main.jpg'),
+    feature_one: require('./QualityStandard-feature-1.jpg'),
+    feature_two: require('./QualityStandard-feature-2.jpg'),
+  }
 }

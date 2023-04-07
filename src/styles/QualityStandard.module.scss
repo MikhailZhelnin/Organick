@@ -1,0 +1,132 @@
+@import './mixins';
+@import './_variables';
+
+.qualityStandard {
+  padding: 146px 0;
+
+  .container {
+    @include container;
+
+    .content {
+      .mainImage {
+        margin-bottom: 70px;
+        width: 100%;
+        height: 742px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .contentContainer {
+        max-width: 936px;
+        margin: 0 auto;
+
+        .title {
+          margin-bottom: 28px;
+          font-weight: 700;
+          font-size: $size-heading-h2;
+          line-height: 59px;
+          color: $color-main;
+        }
+
+        .text {
+          margin-bottom: 70px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          p {
+            margin-bottom: 30px;
+            font-size: $size-text-main;
+            font-weight: 300;
+            line-height: 29.7px;
+            color: $color-abbey;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .list {
+          margin-bottom: 70px;
+
+          .listItem {
+            margin-bottom: 28px;
+            display: flex;
+
+            &:nth-child(2) {
+              .listItemImage {
+                order: 2;
+                margin-right: 0;
+                margin-left: 20px;
+              }
+
+              .listItemContent {
+                order: 1;
+              }
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .listItemImage {
+              margin-right: 20px;
+              width: 40%;
+              min-height: 252px;
+              border-radius: 20px;
+              overflow: hidden;
+
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .listItemContent {
+              padding: 63px 45px;
+              width: 60%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              border-radius: 20px;
+              background-color: #F9F8F8;
+              overflow: hidden;
+
+              .listItemContentTitle {
+                margin-bottom: 7px;
+                font-weight: 500;
+                font-size: $size-heading-h6;
+                line-height: 29px;
+                color: $color-main;
+              }
+
+              .listItemContentText {
+                p {
+                  font-size: $size-text-main;
+                  font-weight: 300;
+                  line-height: 29.7px;
+                  color: $color-abbey;
+                }
+              }
+            }
+          }
+        }
+
+        .titleSmall {
+          margin-bottom: 11px;
+          font-weight: 700;
+          font-size: $size-heading-h4;
+          line-height: 59px;
+          color: $color-main;
+        }
+      }
+    }
+  }
+}

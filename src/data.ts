@@ -39,7 +39,7 @@ export const menuItemsData: IMenuItem[] = [
       {
         id: 2,
         title: 'Quality',
-        link: '/',
+        link: '/quality',
       },
       {
         id: 3,
