@@ -20,5 +20,14 @@ export const icons = {
     two: require('./WhyChooseUsFeature-2.svg').default,
     three: require('./WhyChooseUsFeature-3.svg').default,
     four: require('./WhyChooseUsFeature-4.svg').default,
-  }
+  },
+  services: {
+    one: require('./ServicesFeature-1.svg').default,
+    two: require('./ServicesFeature-2.svg').default,
+    three: require('./ServicesFeature-3.svg').default,
+    four: require('./ServicesFeature-4.svg').default,
+    five: require('./ServicesFeature-5.svg').default,
+    six: require('./ServicesFeature-6.svg').default,
+  },
+  play: require('./Play.svg').default,
 }

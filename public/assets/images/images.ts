@@ -17,4 +17,8 @@ export const images = {
     services: require('./PageHeading-Services.png'),
   },
   why_choose_us: require('./WhyChooseUs.png'),
+  services: {
+    pack: require('./Services-pack.png'),
+    video_bg: require('./Services-video-bg.png'),
+  },
 }

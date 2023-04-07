@@ -1,0 +1,70 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.whyChooseUs {
+  padding: 146px 0;
+
+  .container {
+    @include container;
+
+    .content {
+      display: flex;
+      align-items: center;
+
+      .list {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+
+        .listItem {
+          margin-bottom: 39px;
+          display: flex;
+          flex-direction: column;
+
+          &.listItemLeft {
+            align-items: flex-end;
+
+            .listItemText {
+              p {
+                text-align: right;
+              }
+            }
+          }
+        }
+
+        .listItemImage {
+
+        }
+
+        .listItemTitle {
+          flex-grow: 1;
+          font-size: $size-heading-h6;
+          font-weight: 500;
+          line-height: 29.3px;
+          color: $color-main;
+        }
+
+        .listItemText {
+          p {
+            font-size: $size-text-main;
+            font-weight: 300;
+            line-height: 29.7px;
+            color: $color-abbey;
+          }
+        }
+      }
+
+      .image {
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

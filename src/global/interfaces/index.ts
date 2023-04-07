@@ -11,4 +11,5 @@ export * from './ITestimonialsFeature'
 export * from './IWhoWeAreFeature'
 export * from './IWhyChooseUsFeature'
 export * from './IMenuItem'
+export * from './IServicesFeature'
 

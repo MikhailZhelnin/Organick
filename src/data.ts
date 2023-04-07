@@ -8,7 +8,8 @@ import {
   IFooterSocial,
   IFooterPage,
   IWhyChooseUsFeature,
-  IMenuItem
+  IMenuItem,
+  IServicesFeature
 } from './global/interfaces/index'
 
 import {images} from "../public/assets/images/images";
@@ -260,5 +261,44 @@ export const whyChooseUsFeatures: IWhyChooseUsFeature[] = [
     icon: icons.why_choose_us.four,
     title: 'Secured Payment',
     text: 'Simply dummy text of the printintypesetting industry.'
+  },
+]
+
+export const servicesFeaturesData: IServicesFeature[] = [
+  {
+    id: 1,
+    icon: icons.services.one,
+    title: 'Dairy Products',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis'
+  },
+  {
+    id: 2,
+    icon: icons.services.two,
+    title: 'Store Services',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis'
+  },
+  {
+    id: 3,
+    icon: icons.services.three,
+    title: 'Delivery Services',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis'
+  },
+  {
+    id: 4,
+    icon: icons.services.four,
+    title: 'Agricultural Services',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis'
+  },
+  {
+    id: 5,
+    icon: icons.services.five,
+    title: 'Organic Products',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis'
+  },
+  {
+    id: 6,
+    icon: icons.services.six,
+    title: 'Fresh Vegetables',
+    text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut perspiciatis'
   },
 ]
