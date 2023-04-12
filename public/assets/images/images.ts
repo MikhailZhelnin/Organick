@@ -17,6 +17,7 @@ export const images = {
     services: require('./PageHeading-Services.png'),
     quality: require('./PageHeading-QualityStandard.jpg'),
     portfolio: require('./PageHeading-PortfolioStandard.png'),
+    team: require('./PageHeading-OurTeam.jpg'),
   },
   why_choose_us: require('./WhyChooseUs.png'),
   services: {

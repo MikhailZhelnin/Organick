@@ -49,7 +49,7 @@ export const menuItemsData: IMenuItem[] = [
       {
         id: 4,
         title: 'Team',
-        link: '/',
+        link: '/team',
       },
       {
         id: 5,
@@ -65,11 +65,6 @@ export const menuItemsData: IMenuItem[] = [
   },
   {
     id: 5,
-    title: 'Projects',
-    link: '/',
-  },
-  {
-    id: 6,
     title: 'News',
     link: '/',
   },

@@ -2,7 +2,7 @@
 @import '../../styles/variables';
 
 .experts {
-  padding: 164px 0;
+  padding: 164px 0 122px 0;
 
   .container {
     @include container;
@@ -24,6 +24,7 @@
       .list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
       }
     }
   }
