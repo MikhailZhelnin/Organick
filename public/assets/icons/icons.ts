@@ -30,4 +30,5 @@ export const icons = {
     six: require('./ServicesFeature-6.svg').default,
   },
   play: require('./Play.svg').default,
+  arrow_bottom: require('./Arrow-bottom.svg').default,
 }

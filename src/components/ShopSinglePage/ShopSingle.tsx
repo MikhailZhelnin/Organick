@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {useState} from "react";
 import {Rating} from "react-simple-star-rating";
 
 import {IProduct} from "@/global/interfaces";
@@ -8,7 +9,6 @@ import {urlFor} from "@/helpers/urlFor";
 import Button from "@/components/Shared/Button/Button";
 
 import styles from './ShopSingle.module.scss'
-import {useState} from "react";
 
 interface ShopSingleProps {
   product: IProduct,

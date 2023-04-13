@@ -1,5 +1,4 @@
 import {GetStaticPaths, GetStaticProps} from "next";
-import {Rating} from 'react-simple-star-rating'
 
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
@@ -14,12 +13,12 @@ import {IProduct} from "@/global/interfaces";
 import ShopSingle from "@/components/ShopSinglePage/ShopSingle";
 import RelatedProducts from "@/components/ShopSinglePage/RelatedProducts/RelatedProducts";
 
-interface ShopPageProps {
+interface ShopItemPageProps {
   product: IProduct,
   products: IProduct[]
 }
 
-export default function ShopPage({product, products}: ShopPageProps) {
+export default function ShopItemPage({product, products}: ShopItemPageProps) {
   return (
     <Main meta={<Meta title={`Organick ${product.title}`} description={`Organick ${product.title} Page`}/>}>
       <PageHeading title='Shop Single' image={images.page_heading.shop_single}/>

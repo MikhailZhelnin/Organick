@@ -8,7 +8,7 @@ import Subscribe from "@/components/Subscribe/Subscribe";
 
 import {images} from "../../public/assets/images/images";
 
-import styles from '../styles/QualityStandard.module.scss';
+import styles from '../styles/QualityStandardPage.module.scss';
 
 export default function QualityStandardPage() {
   return (

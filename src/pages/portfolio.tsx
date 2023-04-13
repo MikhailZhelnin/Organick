@@ -15,7 +15,7 @@ import Subscribe from "@/components/Subscribe/Subscribe";
 import {IPortfolio} from "@/global/interfaces/IPortfolio";
 import {urlFor} from "@/helpers/urlFor";
 
-import styles from '../styles/PortfolioStandard.module.scss'
+import styles from '../styles/PortfolioStandardPage.module.scss'
 
 const yellowtail = Yellowtail({
   weight: ['400'],
@@ -30,26 +30,24 @@ export default function PortfolioStandardPage({portfolio}: PortfolioStandardPage
   return (
     <Main meta={<Meta title='Organick Portfolio Standard' description='Organick Portfolio Standard Page'/>}>
       <PageHeading title='Portfolio Standard' image={images.page_heading.portfolio}/>
-      <section className={styles.portfolioStandard}>
-        <div className={styles.container}>
-          <div className={styles.content}>
-            <ul className={styles.list}>
-              {portfolio.map(elem => (
-                <li className={styles.listItem}>
-                  <div className={styles.listItemTop}>
-                    <Image src={urlFor(elem.image).url()} alt={elem.title} fill className={styles.listItemTopImage}/>
-                    <div className={styles.listItemTopInfo}>
-                      <p>{elem.info}</p>
-                    </div>
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <ul className={styles.list}>
+            {portfolio.map(elem => (
+              <li className={styles.listItem}>
+                <div className={styles.listItemTop}>
+                  <Image src={urlFor(elem.image).url()} alt={elem.title} fill className={styles.listItemTopImage}/>
+                  <div className={styles.listItemTopInfo}>
+                    <p>{elem.info}</p>
                   </div>
-                  <h6 className={styles.listItemTitle}>{elem.title}</h6>
-                  <span className={`${styles.listItemText} ${yellowtail.className}`}>{elem.text}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+                </div>
+                <h6 className={styles.listItemTitle}>{elem.title}</h6>
+                <span className={`${styles.listItemText} ${yellowtail.className}`}>{elem.text}</span>
+              </li>
+            ))}
+          </ul>
         </div>
-      </section>
+      </div>
       <Subscribe/>
     </Main>
   )

@@ -8,21 +8,10 @@ interface NewsListProps {
     newsList: INews[],
 }
 
-import {PortableText} from '@portabletext/react'
-// const components = {
-//   block: {
-//     h1: ({children}: any) => <h1 style={{fontSize: '100px', marginBottom: '10px'}}>{children}</h1>,
-//   },
-// }
-{/*<PortableText*/}
-{/*  value={news[0].content}*/}
-{/*  components={components}*/}
-{/*/>*/}
-
 const NewsList = ({newsList}: NewsListProps) => {
     return (
         <div className={styles.newsList}>
-          {newsList.map(newsItem => (
+          {newsList.sort((a, b) => a.id - b.id).map(newsItem => (
             <NewsItem newsItem={newsItem} key={newsItem.id}/>
           ))}
         </div>

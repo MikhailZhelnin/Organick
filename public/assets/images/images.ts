@@ -18,6 +18,7 @@ export const images = {
     quality: require('./PageHeading-QualityStandard.jpg'),
     portfolio: require('./PageHeading-PortfolioStandard.png'),
     team: require('./PageHeading-OurTeam.jpg'),
+    news: require('./PageHeading-RecentNews.png'),
   },
   why_choose_us: require('./WhyChooseUs.png'),
   services: {

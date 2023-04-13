@@ -9,6 +9,8 @@
   }
 
   .navListItemBtn {
+    display: flex;
+    align-items: center;
     font-size: 20px;
     line-height: 23.5px;
     color: $color-main;
@@ -16,6 +18,10 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+
+    span {
+      margin-right: 5px;
+    }
   }
 
   .navListItemLink {

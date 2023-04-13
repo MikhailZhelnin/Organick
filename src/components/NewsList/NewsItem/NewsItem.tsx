@@ -37,7 +37,7 @@ const NewsItem = ({newsItem}: NewsItemProps) => {
         <div className={styles.newsItemInfoText}>
           <p>{newsItem.text}</p>
         </div>
-        <Button btnType='secondary' text='Read More' asLink link='/'/>
+        <Button btnType='secondary' text='Read More' asLink link={`/news/${newsItem.title}`}/>
       </div>
     </article>
   )

@@ -1,0 +1,6 @@
+@import './mixins';
+
+.container {
+  @include container;
+  padding: 164px 0 100px 0;
+}

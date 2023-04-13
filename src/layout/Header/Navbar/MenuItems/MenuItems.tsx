@@ -1,6 +1,8 @@
 import {useState} from "react";
-
+import Image from "next/image";
 import Link from "next/link";
+
+import {icons} from "../../../../../public/assets/icons/icons";
 
 import {IMenuItem} from "@/global/interfaces";
 
@@ -32,7 +34,8 @@ const MenuItems = ({item}: MenuItemsProps) => {
       {item.submenu ? (
         <>
           <button className={styles.navListItemBtn}>
-            {item.title}{' '}
+            <span>{item.title}{' '}</span>
+            <Image src={icons.arrow_bottom} alt='Arrow bottom'/>
           </button>
           <Dropdown submenu={item.submenu} dropdownOpened={dropdownOpened}/>
         </>
