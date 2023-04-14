@@ -2,16 +2,16 @@ import {GetStaticProps} from "next";
 
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
+import PageHeading from "@/components/PageHeading/PageHeading";
+import About from "@/components/About/About";
+import Experts from "@/components/Experts/Experts";
+import WhyChooseUs from "@/components/AboutUsPage/WhyChooseUs/WhyChooseUs";
+import Subscribe from "@/components/Subscribe/Subscribe";
 
 import client from '../../client'
-
-import About from "@/components/About/About";
-import Subscribe from "@/components/Subscribe/Subscribe";
-import PageHeading from "@/components/PageHeading/PageHeading";
 import {images} from "../../public/assets/images/images";
-import WhyChooseUs from "@/components/AboutUsPage/WhyChooseUs/WhyChooseUs";
+
 import {IExpert} from "@/global/interfaces/IExpert";
-import Experts from "@/components/Experts/Experts";
 
 interface AboutUsPageProps {
   experts: IExpert[]

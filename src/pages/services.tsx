@@ -1,8 +1,6 @@
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
-
 import PageHeading from "@/components/PageHeading/PageHeading";
-
 import WhatWeGrow from "@/components/ServicesPage/WhatWeGrow/WhatWeGrow";
 import OrganicOnly from "@/components/ServicesPage/OrganicOnly/OrganicOnly";
 

@@ -31,4 +31,5 @@ export const icons = {
   },
   play: require('./Play.svg').default,
   arrow_bottom: require('./Arrow-bottom.svg').default,
+  icon_404: require('./404.svg').default,
 }

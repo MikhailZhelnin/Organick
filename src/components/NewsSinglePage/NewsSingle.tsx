@@ -2,7 +2,6 @@ import Image from "next/image";
 import {PortableText, PortableTextComponents} from '@portabletext/react'
 
 import {icons} from "../../../public/assets/icons/icons";
-
 import {urlFor} from "@/helpers/urlFor";
 
 import {INews} from "@/global/interfaces";

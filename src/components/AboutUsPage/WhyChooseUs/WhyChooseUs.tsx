@@ -1,9 +1,9 @@
 import Image from "next/image";
 
+import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
+
 import {icons} from "../../../../public/assets/icons/icons";
 import {images} from "../../../../public/assets/images/images";
-
-import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
 
 import styles from './WhyChooseUs.module.scss'
 

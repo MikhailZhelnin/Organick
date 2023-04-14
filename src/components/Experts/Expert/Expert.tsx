@@ -3,10 +3,9 @@ import Link from "next/link";
 import {Yellowtail} from "next/font/google";
 
 import {urlFor} from "@/helpers/urlFor";
+import {icons} from "../../../../public/assets/icons/icons";
 
 import {IExpert} from "@/global/interfaces/IExpert";
-
-import {icons} from "../../../../public/assets/icons/icons";
 
 import styles from './Expert.module.scss'
 

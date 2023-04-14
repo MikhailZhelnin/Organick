@@ -2,12 +2,11 @@ import {GetStaticProps} from "next";
 
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
-
-import client from '../../client'
-
 import {Banner, OfferBanner, Categories, Testimonials, Offer, WhoWeAre, Gallery, News} from '@/components/HomePage';
 import About from "@/components/About/About";
 import Subscribe from "@/components/Subscribe/Subscribe";
+
+import client from '../../client'
 
 import {IProduct, ITestimonial, INews} from '@/global/interfaces'
 

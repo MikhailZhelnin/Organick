@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
-
 import PageHeading from "@/components/PageHeading/PageHeading";
 import Subscribe from "@/components/Subscribe/Subscribe";
 

@@ -3,7 +3,6 @@ import Image from "next/image";
 import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
 
 import {whoWeAreFeaturesData} from "@/data";
-
 import {images} from "../../../../public/assets/images/images";
 
 import styles from './WhoWeAre.module.scss'

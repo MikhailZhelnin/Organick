@@ -2,11 +2,11 @@ import Image from "next/image";
 import {useState} from "react";
 import {Rating} from "react-simple-star-rating";
 
-import {IProduct} from "@/global/interfaces";
+import Button from "@/components/Shared/Button/Button";
 
 import {urlFor} from "@/helpers/urlFor";
 
-import Button from "@/components/Shared/Button/Button";
+import {IProduct} from "@/global/interfaces";
 
 import styles from './ShopSingle.module.scss'
 

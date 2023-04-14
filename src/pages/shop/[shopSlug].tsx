@@ -2,16 +2,15 @@ import {GetStaticPaths, GetStaticProps} from "next";
 
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
+import PageHeading from "@/components/PageHeading/PageHeading";
+import ShopSingle from "@/components/ShopSinglePage/ShopSingle";
+import RelatedProducts from "@/components/ShopSinglePage/RelatedProducts/RelatedProducts";
+import Subscribe from "@/components/Subscribe/Subscribe";
 
 import client from '../../../client'
 import {images} from "../../../public/assets/images/images";
 
-import PageHeading from "@/components/PageHeading/PageHeading";
-import Subscribe from "@/components/Subscribe/Subscribe";
-
 import {IProduct} from "@/global/interfaces";
-import ShopSingle from "@/components/ShopSinglePage/ShopSingle";
-import RelatedProducts from "@/components/ShopSinglePage/RelatedProducts/RelatedProducts";
 
 interface ShopItemPageProps {
   product: IProduct,

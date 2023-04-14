@@ -2,13 +2,12 @@ import {GetStaticProps} from "next";
 
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
-
-import client from '../../client'
-import {images} from "../../public/assets/images/images";
-
 import PageHeading from "@/components/PageHeading/PageHeading";
 import NewsList from "@/components/NewsList/NewsList";
 import Subscribe from "@/components/Subscribe/Subscribe";
+
+import client from '../../client'
+import {images} from "../../public/assets/images/images";
 
 import {INews} from "@/global/interfaces";
 

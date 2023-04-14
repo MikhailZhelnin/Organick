@@ -2,18 +2,16 @@ import {GetStaticProps} from "next";
 import Image from "next/image";
 import {Yellowtail} from "next/font/google";
 
-import client from "../../client";
-
-import {images} from "../../public/assets/images/images";
-
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
-
 import PageHeading from "@/components/PageHeading/PageHeading";
 import Subscribe from "@/components/Subscribe/Subscribe";
 
-import {IPortfolio} from "@/global/interfaces/IPortfolio";
+import client from "../../client";
+import {images} from "../../public/assets/images/images";
 import {urlFor} from "@/helpers/urlFor";
+
+import {IPortfolio} from "@/global/interfaces/IPortfolio";
 
 import styles from '../styles/PortfolioStandardPage.module.scss'
 

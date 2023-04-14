@@ -2,11 +2,11 @@ import {useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import Dropdown from "@/layout/Header/Navbar/MenuItems/Dropdown/Dropdown";
+
 import {icons} from "../../../../../public/assets/icons/icons";
 
 import {IMenuItem} from "@/global/interfaces";
-
-import Dropdown from "@/layout/Header/Navbar/MenuItems/Dropdown/Dropdown";
 
 import styles from "./MenuItems.module.scss";
 

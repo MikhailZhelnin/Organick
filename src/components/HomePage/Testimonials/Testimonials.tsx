@@ -5,12 +5,11 @@ import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
 import Testimonial from "@/components/HomePage/Testimonials/Testimonial/Testimonial";
 
 import {ITestimonial} from "../../../global/interfaces/index";
+import {testimonialsFeaturesData} from "@/data";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import styles from './Testimonials.module.scss'
-import {testimonialsFeaturesData} from "@/data";
 
 interface TestimonialsProps {
   testimonials: ITestimonial[]

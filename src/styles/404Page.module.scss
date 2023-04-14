@@ -1,0 +1,35 @@
+@import './mixins';
+@import './_variables';
+
+.custom404Page {
+  margin-bottom: 164px;
+  padding: 214px 0;
+  background-image: url("../../public/assets/images/404Page-bg.png");
+  background-size: cover;
+
+  .container {
+    @include container;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .title {
+        font-size: $size-heading-h1;
+        line-height: 82px;
+        font-weight: 900;
+        color: $color-main;
+      }
+
+      .text {
+        margin-bottom: 30px;
+        p {
+          font-size: $size-text-main;
+          line-height: 29.7px;
+          color: $color-abbey;
+        }
+      }
+    }
+  }
+}

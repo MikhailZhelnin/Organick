@@ -1,12 +1,11 @@
 import {GetStaticPaths, GetStaticProps} from "next";
 
-import client from '../../../client'
-
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
-
 import Subscribe from "@/components/Subscribe/Subscribe";
 import NewsSingle from "@/components/NewsSinglePage/NewsSingle";
+
+import client from '../../../client'
 
 import {INews} from "@/global/interfaces";
 

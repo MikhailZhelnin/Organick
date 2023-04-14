@@ -2,15 +2,15 @@ import {GetStaticProps} from "next";
 
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
+import PageHeading from "@/components/PageHeading/PageHeading";
+import Experts from "@/components/Experts/Experts";
+import Subscribe from "@/components/Subscribe/Subscribe";
 
 import client from '../../client'
 import {images} from "../../public/assets/images/images";
 
-import PageHeading from "@/components/PageHeading/PageHeading";
-import Subscribe from "@/components/Subscribe/Subscribe";
-
 import {IExpert} from "@/global/interfaces/IExpert";
-import Experts from "@/components/Experts/Experts";
+
 
 interface OurTeamPageProps {
   experts: IExpert[]

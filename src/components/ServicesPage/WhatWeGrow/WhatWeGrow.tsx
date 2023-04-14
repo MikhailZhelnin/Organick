@@ -4,7 +4,6 @@ import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
 import Button from "@/components/Shared/Button/Button";
 
 import {servicesFeaturesData} from "@/data";
-
 import {images} from "../../../../public/assets/images/images";
 
 import styles from './WhatWeGrow.module.scss'

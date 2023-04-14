@@ -4,7 +4,6 @@ import Link from "next/link";
 import Navbar from "@/layout/Header/Navbar/Navbar";
 
 import {icons} from "../../../public/assets/icons/icons";
-
 import {menuItemsData} from "@/data";
 
 import styles from './Header.module.scss'

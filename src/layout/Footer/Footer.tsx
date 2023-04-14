@@ -1,8 +1,10 @@
-import styles from './Footer.module.scss'
-import {footerContactsData, footerPagesData, footerSocialsData} from "@/data";
-import Image from "next/image";
-import {icons} from "../../../public/assets/icons/icons";
 import Link from "next/link";
+import Image from "next/image";
+
+import {footerContactsData, footerPagesData, footerSocialsData} from "@/data";
+import {icons} from "../../../public/assets/icons/icons";
+
+import styles from './Footer.module.scss'
 
 const Footer = () => {
   return (
