@@ -19,6 +19,7 @@ export const images = {
     portfolio: require('./PageHeading-PortfolioStandard.png'),
     team: require('./PageHeading-OurTeam.jpg'),
     news: require('./PageHeading-RecentNews.png'),
+    contact_us: require('./PageHeading-ContactUs.png'),
   },
   why_choose_us: require('./WhyChooseUs.png'),
   services: {
@@ -29,5 +30,9 @@ export const images = {
     main: require('./QualityStandard-main.jpg'),
     feature_one: require('./QualityStandard-feature-1.jpg'),
     feature_two: require('./QualityStandard-feature-2.jpg'),
+  },
+  contact_us: {
+    one: require('./ContactUs-1.png'),
+    two: require('./ContactUs-2.png'),
   }
 }

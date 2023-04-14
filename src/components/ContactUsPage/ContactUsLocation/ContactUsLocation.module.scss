@@ -1,0 +1,82 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.contactUsLocation {
+  margin-bottom: 100px;
+
+  .container {
+    @include container;
+
+    .content {
+      padding: 122px 108px;
+      min-height: 758px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-image: url("../../../../public/assets/images/ContactUs-2.png");
+      background-size: cover;
+
+      .info {
+        padding: 46px 53px;
+        max-width: 514px;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+
+        .infoOverhead {
+          font-size: 36px;
+          line-height: 49px;
+          color: $color-acapulco;
+        }
+
+        .infoTitle {
+          margin-bottom: 10px;
+          font-size: $size-heading-h2;
+          font-weight: 700;
+          line-height: 58.6px;
+          color: $color-main;
+        }
+
+        .infoText {
+          margin-bottom: 19px;
+
+          p {
+            font-size: $size-text-main;
+            font-weight: 300;
+            line-height: 29.7px;
+            color: $color-abbey;
+          }
+        }
+
+        .infoList {
+          .infoListItem {
+            margin-bottom: 22px;
+            display: flex;
+            align-items: flex-start;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .infoListItemImage {
+              margin-right: 5px;
+            }
+
+            .infoListItemAddress {
+              display: flex;
+              flex-direction: column;
+              font-size: $size-text-main;
+              font-weight: 300;
+              line-height: 29.7px;
+              color: $color-abbey;
+
+              .infoListItemAddressBottom {
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

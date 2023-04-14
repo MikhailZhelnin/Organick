@@ -5,7 +5,7 @@ import {
   IWhoWeAreFeature,
   IGallery,
   IFooterContact,
-  IFooterSocial,
+  ISocial,
   IFooterPage,
   IWhyChooseUsFeature,
   IMenuItem,
@@ -54,7 +54,7 @@ export const menuItemsData: IMenuItem[] = [
       {
         id: 5,
         title: 'Contact',
-        link: '/',
+        link: '/contact-us',
       },
     ],
   },
@@ -177,7 +177,7 @@ export const footerContactsData: IFooterContact[] = [
   },
 ]
 
-export const footerSocialsData: IFooterSocial[] = [
+export const socialsData: ISocial[] = [
   {
     id: 1,
     name: 'Instagram',

@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import {footerContactsData, footerPagesData, footerSocialsData} from "@/data";
+import Socials from "@/components/Shared/Socials/Socials";
+
+import {footerContactsData, footerPagesData} from "@/data";
 import {icons} from "../../../public/assets/icons/icons";
 
 import styles from './Footer.module.scss'
@@ -33,22 +35,16 @@ const Footer = () => {
                 Lorem Ipsum simply dummy text of the printing
               </p>
             </div>
-            <div className={styles.centerList}>
-              {footerSocialsData.map(social => (
-                <Link href={social.link} key={social.id} className={styles.centerListItem}>
-                  <Image src={social.icon} alt={social.name} className={styles.centerListItemImage}/>
-                </Link>
-              ))}
-            </div>
+            <Socials/>
           </div>
 
           <div className={styles.right}>
             <h5 className={styles.rightTitle}>Utility Pages</h5>
             <ul className={styles.rightList}>
               {footerPagesData.map(contact => (
-                <ul key={contact.id} className={styles.rightListItem}>
+                <li key={contact.id} className={styles.rightListItem}>
                   <Link href={contact.link} className={styles.rightListItemLink}>{contact.text}</Link>
-                </ul>
+                </li>
               ))}
             </ul>
           </div>

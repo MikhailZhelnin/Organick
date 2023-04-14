@@ -1,0 +1,88 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.contactUsForm {
+  margin-bottom: 164px;
+
+  .container {
+    @include container;
+
+    .content {
+      .form {
+        max-width: 1184px;
+        margin: 0 auto;
+
+        .formGroup {
+          margin-bottom: 50px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .formGroupItem {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+
+            &.textareaGroup {
+              width: 100%;
+            }
+
+            .formGroupItemLabel {
+              margin-bottom: 26px;
+              font-size: $size-text-main;
+              line-height: 21px;
+              font-weight: 500;
+              color: $color-main;
+            }
+
+            .formGroupItemInput,
+            .formGroupItemTextarea {
+              padding: 28px 23px;
+              border: 1px solid $color-acapulco;
+              border-radius: 16px;
+              font-size: $size-text-main;
+              font-family: inherit;
+              font-style: italic;
+              color: $color-main;
+              outline: none;
+            }
+
+            .formGroupItemInput::placeholder,
+            .formGroupItemTextarea::placeholder {
+              color: rgba(171, 171, 171, 1);
+            }
+
+            .formGroupItemInput {
+              &.formGroupItemInputError {
+                border-color: red;
+              }
+            }
+
+            .formGroupItemTextarea {
+              &.formGroupItemTextareaError {
+                border-color: red;
+              }
+            }
+
+            .formGroupItemError {
+              position: absolute;
+              right: 25px;
+              bottom: -25px;
+              color: red;
+            }
+
+            .formGroupItemTextarea {
+              resize: none;
+              width: 100%;
+            }
+          }
+        }
+
+        .formButton {
+          @include btn-main;
+        }
+      }
+    }
+  }
+}

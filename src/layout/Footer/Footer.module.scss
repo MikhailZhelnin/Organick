@@ -81,32 +81,6 @@
             color: $color-abbey;
           }
         }
-
-        .centerList {
-          display: flex;
-
-          .centerListItem {
-            margin-right: 15px;
-            position: relative;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #EFF6F1;
-            border: 1px solid transparent;
-            transition: border-color .2s ease-in-out;
-
-            &:hover {
-              border-color: $color-abbey;
-            }
-
-            .centerListItemImage {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-          }
-        }
       }
 
       .right {
