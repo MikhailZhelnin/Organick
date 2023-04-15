@@ -3,4 +3,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: 1101px) {
+    justify-content: space-evenly;
+  }
 }

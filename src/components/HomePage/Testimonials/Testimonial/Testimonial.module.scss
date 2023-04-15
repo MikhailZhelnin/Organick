@@ -20,6 +20,10 @@
 
   .testimonialRating {
     margin-bottom: 25px;
+
+    @media (max-width: $small-mobile) {
+      margin-bottom: 15px;
+    }
   }
 
   .testimonialText {
@@ -32,6 +36,10 @@
       line-height: 29.7px;
       font-weight: 300;
       color: $color-abbey;
+
+      @media (max-width: $small-mobile) {
+        font-size: 16px;
+      }
     }
   }
 

@@ -29,7 +29,7 @@ export const Testimonials = ({testimonials}: TestimonialsProps) => {
             autoplay={{
               delay: 5000,
             }}
-            style={{marginBottom: '170px' ,paddingBottom: '30px'}}
+            className={styles.swiper}
           >
             {testimonials.map(testimonial => (
               <SwiperSlide key={testimonial.id}>

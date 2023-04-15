@@ -25,7 +25,6 @@ const SectionHeading = ({overhead, title, position = 'center', marginBottom = '4
           <span className={`${styles.sectionTitleOverhead} ${yellowtail.className}`}>{overhead}</span>
       }
       <h2 className={styles.sectionTitleTitle} style={{color: titleColor}}>{title}</h2>
-
     </div>
   )
 }

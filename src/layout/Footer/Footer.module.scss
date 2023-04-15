@@ -4,12 +4,23 @@
 .footer {
   padding: 0 0 146px 0;
 
+  @media (max-width: $media-tablet) {
+    padding: 0 0 30px 0;
+  }
+  @media (max-width: $small-mobile) {
+    padding: 0 0 20px 0;
+  }
+
   .container {
     @include container;
 
     .content {
       display: flex;
       justify-content: center;
+
+      @media (max-width: 900px) {
+        flex-direction: column;
+      }
 
       .left {
         width: 25%;
@@ -18,12 +29,35 @@
         flex-direction: column;
         align-items: flex-end;
 
+        @media (max-width: $media-tablet) {
+          padding-right: 20px;
+        }
+        @media (max-width: 900px) {
+          width: 100%;
+          align-items: center;
+          padding: 30px 0 30px 0;
+          margin-bottom: 30px;
+          order: 2;
+          border-top: 1px solid #D5D5D5;
+          border-bottom: 1px solid #D5D5D5;
+        }
+        @media (max-width: $small-mobile) {
+          padding: 20px 0 20px 0;
+          margin-bottom: 20px;
+        }
+
         .leftTitle {
           margin-bottom: 32px;
           font-size: $size-heading-h5;
           font-weight: 700;
           line-height: 35px;
           color: $color-main;
+
+          @media (max-width: $small-mobile) {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 15px;
+          }
         }
 
         .leftList {
@@ -36,11 +70,30 @@
             flex-direction: column;
             align-items: flex-end;
 
+            @media (max-width: $media-tablet) {
+              margin-bottom: 15px;
+            }
+            @media (max-width: 900px) {
+              align-items: center;
+              margin-right: 0;
+            }
+
+            &:last-child {
+              @media (max-width: 900px) {
+                margin-bottom: 0;
+              }
+            }
+
             .leftListItemTitle {
               font-size: 20px;
               font-weight: 700;
               line-height: 29.7px;
               color: $color-main;
+
+              @media (max-width: $small-mobile) {
+                font-size: 18px;
+                line-height: 25px;
+              }
             }
 
             .leftListItemText {
@@ -48,6 +101,11 @@
               line-height: 29.7px;
               font-weight: 300;
               color: $color-abbey;
+
+              @media (max-width: $small-mobile) {
+                font-size: 16px;
+                line-height: 24px;
+              }
             }
           }
         }
@@ -62,11 +120,25 @@
         border-left: 1px solid #D5D5D5;
         border-right: 1px solid #D5D5D5;
 
+        @media (max-width: $media-tablet) {
+          padding: 0 20px;
+        }
+        @media (max-width: 900px) {
+          margin-bottom: 30px;
+          order: 1;
+          width: 100%;
+          border-left: none;
+          border-right: none;
+        }
+        @media (max-width: $small-mobile) {
+          margin-bottom: 20px;
+        }
+
         .centerLogo {
           margin-bottom: 23px;
 
-          img {
-
+          @media (max-width: $media-tablet) {
+            margin-bottom: 20px;
           }
         }
 
@@ -74,11 +146,23 @@
           margin-bottom: 50px;
           text-align: center;
 
+          @media (max-width: $media-tablet) {
+            margin-bottom: 25px;
+          }
+          @media (max-width: $small-mobile) {
+            margin-bottom: 20px;
+          }
+
           p {
             font-size: $size-text-main;
             line-height: 29.7px;
             font-weight: 300;
             color: $color-abbey;
+
+            @media (max-width: $small-mobile) {
+              font-size: 16px;
+              line-height: 24px;
+            }
           }
         }
       }
@@ -87,17 +171,45 @@
         width: 25%;
         padding-left: 50px;
 
+        @media (max-width: $media-tablet) {
+          padding-left: 20px;
+        }
+        @media (max-width: 900px) {
+          padding-left: 0;
+          order: 3;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
         .rightTitle {
           margin-bottom: 32px;
           font-size: $size-heading-h5;
           font-weight: 700;
           line-height: 35px;
           color: $color-main;
+
+          @media (max-width: $small-mobile) {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 15px;
+          }
         }
 
         .rightList {
+          @media (max-width: 900px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
           .rightListItem {
             margin-bottom: 20px;
+
+            @media (max-width: $media-tablet) {
+              margin-bottom: 12px;
+            }
 
             .rightListItemLink {
               padding-bottom: 5px;
@@ -107,6 +219,11 @@
               color: $color-abbey;
               border-bottom: 1px solid transparent;
               transition: border-color .2s ease-in-out;
+
+              @media (max-width: $small-mobile) {
+                font-size: 16px;
+                line-height: 24px;
+              }
 
               &:hover {
                 border-color: $color-abbey;

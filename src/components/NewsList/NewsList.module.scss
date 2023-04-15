@@ -1,5 +1,12 @@
+@import '../../styles/variables';
+
 .newsList {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (max-width: $media-mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
 }

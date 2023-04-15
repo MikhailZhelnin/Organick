@@ -13,12 +13,16 @@
   padding: 28px 39px;
   display: flex;
   align-items: center;
-  font-size: $size-button;
+  font-size: 18px;
   line-height: 23.5px;
   border: none;
   border-radius: 16px;
   cursor: pointer;
   transition: background-color .2s ease-in-out;
+
+  @media (max-width: $small-mobile) {
+    padding: 23px 33px;
+  }
 }
 
 @mixin btn-main {
