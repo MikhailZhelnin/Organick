@@ -72,11 +72,7 @@
     line-height: 70px;
   }
   @media (max-width: $small-mobile) {
-    font-size: 50px;
-    line-height: 60px;
-  }
-  @media (max-width: 400px) {
     font-size: 40px;
-    line-height: 45px;
+    line-height: 50px;
   }
 }

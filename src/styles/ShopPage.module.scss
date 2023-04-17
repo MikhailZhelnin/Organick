@@ -1,7 +1,17 @@
-@import './mixins';
+@import './_mixins';
+@import './_variables';
 
 .container {
   @include container;
   margin-top: 90px;
   margin-bottom: 90px;
+
+  @media (max-width: $media-mobile) {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: $small-mobile) {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
 }

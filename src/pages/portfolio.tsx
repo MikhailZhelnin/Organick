@@ -32,7 +32,7 @@ export default function PortfolioStandardPage({portfolio}: PortfolioStandardPage
         <div className={styles.content}>
           <ul className={styles.list}>
             {portfolio.map(elem => (
-              <li className={styles.listItem}>
+              <li key={elem.id} className={styles.listItem}>
                 <div className={styles.listItemTop}>
                   <Image src={urlFor(elem.image).url()} alt={elem.title} fill className={styles.listItemTopImage}/>
                   <div className={styles.listItemTopInfo}>
