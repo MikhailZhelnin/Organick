@@ -62,4 +62,21 @@
   font-weight: 700;
   line-height: 82px;
   color: $color-main;
+
+  @media (max-width: $media-tablet) {
+    font-size: 65px;
+    line-height: 75px;
+  }
+  @media (max-width: $media-mobile) {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  @media (max-width: $small-mobile) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  @media (max-width: 400px) {
+    font-size: 40px;
+    line-height: 45px;
+  }
 }
