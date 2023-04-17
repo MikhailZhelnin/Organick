@@ -4,6 +4,16 @@
 .contactUsForm {
   margin-bottom: 164px;
 
+  @media (max-width: $media-tablet) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: $media-mobile) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: $small-mobile) {
+    margin-bottom: 50px;
+  }
+
   .container {
     @include container;
 
@@ -18,11 +28,21 @@
           display: flex;
           justify-content: space-between;
 
+          @media (max-width: 550px) {
+            margin-bottom: 0;
+            flex-direction: column;
+          }
+
           .formGroupItem {
             position: relative;
             display: flex;
             flex-direction: column;
             width: 48%;
+
+            @media (max-width: 550px) {
+              margin-bottom: 30px;
+              width: 100%;
+            }
 
             &.textareaGroup {
               width: 100%;
@@ -34,6 +54,10 @@
               line-height: 21px;
               font-weight: 500;
               color: $color-main;
+
+              @media (max-width: 550px) {
+                margin-bottom: 10px;
+              }
             }
 
             .formGroupItemInput,
@@ -81,6 +105,10 @@
 
         .formButton {
           @include btn-main;
+
+          @media (max-width: 550px) {
+            margin-top: 20px;
+          }
         }
       }
     }
