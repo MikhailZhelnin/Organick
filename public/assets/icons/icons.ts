@@ -35,4 +35,5 @@ export const icons = {
   location: require('./Location.svg').default,
   mail: require('./Mail.svg').default,
   phone: require('./Phone.svg').default,
+  toTop: require('./ToTop.svg').default,
 }

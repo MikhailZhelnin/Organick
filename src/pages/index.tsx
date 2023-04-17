@@ -17,7 +17,6 @@ interface HomeProps {
 }
 
 export default function Home({products, testimonials, news}: HomeProps) {
-
   return (
     <Main meta={<Meta title='Organick Home' description='Organick Home Page'/>}>
       <Banner/>
