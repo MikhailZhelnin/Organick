@@ -4,6 +4,16 @@
 .newsSingle {
   padding-bottom: 164px;
 
+  @media (max-width: $media-tablet) {
+    padding-bottom: 100px;
+  }
+  @media (max-width: $media-mobile) {
+    padding-bottom: 80px;
+  }
+  @media (max-width: $small-mobile) {
+    padding-bottom: 50px;
+  }
+
   .container {
     @include container;
 
@@ -11,9 +21,18 @@
       .top {
         position: relative;
         margin: 0 auto 80px;
-        width: 1200px;
+        max-width: 1200px;
         height: 600px;
         color: $color-main;
+
+        @media (max-width: $media-tablet) {
+          margin: 0 auto 40px;
+          height: 500px;
+        }
+        @media (max-width: $media-mobile) {
+          margin: 0 auto 20px;
+          height: 400px;
+        }
 
         .topImage {
           position: absolute;
@@ -29,7 +48,7 @@
           bottom: 0;
           width: 100%;
           z-index: 2;
-          background-color: rgba(255, 255, 255, 0.8);
+          background-color: rgba(255, 255, 255, 0.85);
 
           .topInfoUser {
             margin-bottom: 10px;
@@ -38,6 +57,12 @@
               margin-right: 30px;
               font-size: $size-text-main;
               line-height: 21px;
+
+              @media (max-width: $small-mobile) {
+                margin-right: 15px;
+                font-size: 16px;
+                line-height: 22px;
+              }
             }
 
             .topInfoUserIcon {
@@ -47,12 +72,22 @@
             .topInfoUserName {
               font-size: $size-text-main;
               line-height: 21px;
+
+              @media (max-width: $small-mobile) {
+                font-size: 16px;
+                line-height: 22px;
+              }
             }
           }
 
           .topInfoTitle {
             margin-bottom: 10px;
             font-size: $size-heading-h5;
+
+            @media (max-width: $small-mobile) {
+              font-size: 25px;
+              line-height: 30px;
+            }
           }
 
           .topInfoText {
@@ -60,6 +95,11 @@
               font-size: $size-text-main;
               font-weight: 300;
               line-height: 29.7px;
+
+              @media (max-width: $small-mobile) {
+                font-size: 16px;
+                line-height: 22px;
+              }
             }
           }
         }
@@ -75,25 +115,61 @@
           font-weight: 700;
           line-height: 59px;
           color: $color-main;
+
+          @media (max-width: $media-tablet) {
+            font-size: 45px;
+            line-height: 52px;
+          }
+          @media (max-width: $small-mobile) {
+            margin-bottom: 15px;
+            font-size: 35px;
+            line-height: 40px;
+          }
         }
+
         .textH3 {
           margin-bottom: 24px;
           font-size: $size-heading-h4;
           font-weight: 700;
           line-height: 41px;
           color: $color-main;
+
+          @media (max-width: $media-tablet) {
+            font-size: 30px;
+            line-height: 35px;
+          }
+          @media (max-width: $small-mobile) {
+            font-size: 25px;
+            line-height: 30px;
+          }
         }
+
         .textNormal {
           margin-bottom: 22px;
           font-size: $size-text-main;
           font-weight: 300;
           line-height: 29.7px;
+
+          @media (max-width: $media-mobile) {
+            margin-bottom: 15px;
+          }
+          @media (max-width: $small-mobile) {
+            font-size: 16px;
+            line-height: 22px;
+          }
         }
+
         .textList {
           margin-bottom: 10px;
           font-size: $size-text-main;
           font-weight: 300;
           line-height: 29.7px;
+
+          @media (max-width: $small-mobile) {
+            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 22px;
+          }
         }
       }
     }

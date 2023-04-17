@@ -43,15 +43,17 @@ const ShopSingle = ({product}: ShopSingleProps) => {
                 <p>{product.text}</p>
               </div>
               <div className={styles.topInfoAction}>
-                <span className={styles.topInfoActionText}>Quantity:</span>
-                <input
-                  type="text"
-                  pattern="\d*"
-                  maxLength={1}
-                  value={quantity}
-                  onChange={(e) => setQuantity(e.target.value)}
-                  className={styles.topInfoActionInput}
-                />
+                <div>
+                  <span className={styles.topInfoActionText}>Quantity:</span>
+                  <input
+                    type="text"
+                    pattern="\d*"
+                    maxLength={1}
+                    value={quantity}
+                    onChange={(e) => setQuantity(e.target.value)}
+                    className={styles.topInfoActionInput}
+                  />
+                </div>
                 <Button btnType='main' text='Add To Cart'/>
               </div>
             </div>

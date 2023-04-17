@@ -4,6 +4,16 @@
 .shopSingle {
   padding: 164px 0;
 
+  @media (max-width: $media-tablet) {
+    padding: 100px 0;
+  }
+  @media (max-width: $media-mobile) {
+    padding: 80px 0;
+  }
+  @media (max-width: $small-mobile) {
+    padding: 50px 0;
+  }
+
   .container {
     @include container;
 
@@ -13,17 +23,50 @@
         display: flex;
         align-items: center;
 
+        @media (max-width: $media-mobile) {
+          margin-bottom: 70px;
+        }
+
+        @media (max-width: 600px) {
+          margin-bottom: 40px;
+          flex-direction: column;
+        }
+
         .topImage {
           position: relative;
-          width: 45%;
+          width: 40%;
           height: 563px;
           border-radius: 36px;
           overflow: hidden;
+
+          @media (max-width: 1100px) {
+            height: 500px;
+          }
+          @media (max-width: 950px) {
+            height: 430px;
+          }
+          @media (max-width: $media-mobile) {
+            height: 350px;
+          }
+          @media (max-width: 600px) {
+            margin-bottom: 20px;
+            width: 50%;
+          }
+          @media (max-width: $small-mobile) {
+            width: 60%;
+          }
+          @media (max-width: 400px) {
+            width: 75%;
+          }
 
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+
+            @media (max-width: 600px) {
+              object-position: top;
+            }
           }
 
           .topCategory {
@@ -47,12 +90,33 @@
           padding: 100px 0 100px 90px;
           width: 55%;
 
+          @media (max-width: 1100px) {
+            padding: 70px 0 70px 50px;
+            width: 60%;
+          }
+          @media (max-width: 950px) {
+            padding: 0 0 0 25px;
+          }
+          @media (max-width: 600px) {
+            width: 100%;
+            padding: 0;
+          }
+
           .topInfoTitle {
             margin-bottom: 10px;
             font-size: $size-heading-h3;
             font-weight: 700;
             line-height: 46.8px;
             color: $color-main;
+
+            @media (max-width: $media-mobile) {
+              font-size: 35px;
+              line-height: 40px;
+            }
+            @media (max-width: $small-mobile) {
+              font-size: 30px;
+              line-height: 35px;
+            }
           }
 
           .topInfoRating {
@@ -64,11 +128,19 @@
             align-items: center;
             margin-bottom: 25px;
 
+            @media (max-width: $media-tablet) {
+              margin-bottom: 10px;
+            }
+
             .topInfoPricePrice {
               margin-right: 7px;
               font-size: 20px;
               color: #B8B8B8;
               text-decoration: line-through;
+
+              @media (max-width: $small-mobile) {
+                font-size: 18px;
+              }
             }
 
             .topInfoPriceDiscount {
@@ -76,17 +148,33 @@
               line-height: 24.5px;
               color: $color-main;
               font-weight: 700;
+
+              @media (max-width: $small-mobile) {
+                font-size: 23px;
+              }
             }
           }
 
           .topInfoText {
             margin-bottom: 35px;
 
+            @media (max-width: $media-tablet) {
+              margin-bottom: 20px;
+            }
+            @media (max-width: $small-mobile) {
+              margin-bottom: 15px;
+            }
+
             p {
               font-size: $size-text-main;
               font-weight: 300;
               line-height: 29.7px;
               color: $color-abbey;
+
+              @media (max-width: $small-mobile) {
+                font-size: 16px;
+                line-height: 22px;
+              }
             }
           }
 
@@ -94,12 +182,37 @@
             display: flex;
             align-items: center;
 
+            @media (max-width: $media-mobile) {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+            @media (max-width: 600px) {
+              flex-direction: row;
+              align-items: baseline;
+            }
+            @media (max-width: $small-mobile) {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+
+            div {
+              @media (max-width: $media-mobile) {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+              }
+            }
+
             .topInfoActionText {
               margin-right: 22px;
               font-size: 20px;
               font-weight: 700;
               line-height: 23.4px;
               color: $color-main;
+
+              @media (max-width: 950px) {
+                margin-right: 15px;
+              }
             }
 
             .topInfoActionInput {
@@ -114,6 +227,14 @@
               border: 2px solid $color-main;
               border-radius: 16px;
               text-align: center;
+
+              @media (max-width: 950px) {
+                margin-right: 15px;
+                width: 70px;
+              }
+              @media (max-width: $small-mobile) {
+                padding: 20px;
+              }
             }
           }
         }
@@ -128,12 +249,23 @@
           display: flex;
           justify-content: center;
 
+          @media (max-width: $media-mobile) {
+            margin-bottom: 20px;
+          }
+
           .tabsHeadItemActive {
             margin-right: 20px;
             padding: 23px 57px;
             background-color: $color-main;
             border-radius: 16px;
             cursor: pointer;
+
+            @media (max-width: $media-mobile) {
+              padding: 20px 50px;
+            }
+            @media (max-width: 600px) {
+              padding: 20px 20px;
+            }
 
             &.tabsHeadItem {
               background-color: #EFF6F1;
@@ -151,6 +283,15 @@
               font-weight: 700;
               line-height: 34px;
               color: #FFFFFF;
+
+              @media (max-width: $media-mobile) {
+                font-size: 22px;
+                line-height: 30px;
+              }
+              @media (max-width: 600px) {
+                font-size: 20px;
+                line-height: 25px;
+              }
             }
           }
         }
@@ -169,6 +310,11 @@
               font-weight: 300;
               line-height: 29.7px;
               color: $color-abbey;
+
+              @media (max-width: $small-mobile) {
+                font-size: 16px;
+                line-height: 22px;
+              }
             }
           }
         }

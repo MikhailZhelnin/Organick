@@ -19,8 +19,8 @@ const components: PortableTextComponents = {
     normal: ({children}) => <p className={styles.textNormal}>{children}</p>,
   },
   listItem: {
-    bullet: ({children}) => <li className={styles.textList} style={{fontSize: '18px', marginBottom: '10px'}}>{children}</li>,
-    number: ({children}) => <ol className={styles.textList} style={{fontSize: '18px', marginBottom: '10px'}}>{children}</ol>,
+    bullet: ({children}) => <li className={styles.textList}>{children}</li>,
+    number: ({children}) => <ol className={styles.textList}>{children}</ol>,
   },
 }
 
