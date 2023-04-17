@@ -38,12 +38,8 @@
 
       .list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-
-        @media (max-width: $media-tablet) {
-          justify-content: space-evenly;
-        }
       }
     }
   }

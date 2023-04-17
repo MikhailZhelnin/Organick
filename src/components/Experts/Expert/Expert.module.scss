@@ -3,39 +3,43 @@
 
 .expert {
   margin-bottom: 42px;
+  width: 450px;
   overflow: hidden;
   border-radius: 36px;
   transition: box-shadow .2s ease-in-out;
 
-  &:hover {
-    box-shadow: 0 20px 35px rgba(167, 167, 167, 0.25);
+  @media (max-width: $small-mobile) {
+    width: 90%;
+  }
 
-    .expertImage {
-      img {
-        transform: scale(1.1);
+  @media (min-width: $media-tablet) {
+    &:hover {
+      box-shadow: 0 20px 35px rgba(167, 167, 167, 0.25);
+
+      .expertImage {
+        img {
+          transform: scale(1.1);
+        }
       }
-    }
 
-    .expertInfo {
-      background-color: #FFFFFF;
+      .expertInfo {
+        background-color: #FFFFFF;
+      }
     }
   }
 
   .expertImage {
-    width: 449px;
+    width: 100%;
     height: 485px;
     overflow: hidden;
 
     @media (max-width: $media-tablet) {
-      width: 400px;
       height: 455px;
     }
     @media (max-width: $media-mobile) {
-      width: 350px;
       height: 400px;
     }
     @media (max-width: $small-mobile) {
-      width: 100%;
       height: 350px;
     }
 
