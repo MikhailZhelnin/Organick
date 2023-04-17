@@ -34,7 +34,7 @@ const WhatWeGrow = () => {
           <div className={styles.image}>
             <Image src={images.services.pack} alt='Services pack'/>
           </div>
-          <ul className={styles.list}>
+          <ul className={`${styles.list} ${styles.listTwo}`}>
             {servicesFeaturesData.slice(3, 6).map(feature => (
               <li key={feature.id} className={`${styles.listItem} ${styles.listItemRight}`}>
                 <div className={styles.listItemImage}>

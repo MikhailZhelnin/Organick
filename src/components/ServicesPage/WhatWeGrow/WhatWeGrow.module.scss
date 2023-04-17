@@ -4,6 +4,16 @@
 .whyChooseUs {
   padding: 146px 0;
 
+  @media (max-width: $media-tablet) {
+    padding: 100px 0;
+  }
+  @media (max-width: $media-mobile) {
+    padding: 80px 0;
+  }
+  @media (max-width: $small-mobile) {
+    padding: 50px 0;
+  }
+
   .container {
     @include container;
 
@@ -11,29 +21,78 @@
       display: flex;
       align-items: center;
 
+      @media (max-width: $media-tablet) {
+        flex-direction: column;
+      }
+
       .list {
         width: 25%;
         display: flex;
         flex-direction: column;
+
+        &:nth-child(1) {
+          @media (max-width: $media-tablet) {
+            order: 2;
+          }
+        }
+        &.listTwo {
+          order: 3;
+        }
+
+        @media (max-width: $media-tablet) {
+          width: 100%;
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+        @media (max-width: 600px) {
+          flex-direction: column;
+          align-items: center;
+        }
 
         .listItem {
           margin-bottom: 39px;
           display: flex;
           flex-direction: column;
 
+          @media (max-width: $media-tablet) {
+            padding: 0 7px;
+            width: 32%;
+          }
+          @media (max-width: 600px) {
+            margin-bottom: 20px;
+            width: 80%;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+          }
+
           &.listItemLeft {
             align-items: flex-end;
+
+            @media (max-width: $media-tablet) {
+              align-items: flex-start;
+            }
+            @media (max-width: 600px) {
+              align-items: center;
+            }
 
             .listItemText {
               p {
                 text-align: right;
+
+                @media (max-width: $media-tablet) {
+                  text-align: left;
+                }
+                @media (max-width: 600px) {
+                  text-align: center;
+                }
               }
             }
           }
         }
 
         .listItemImage {
-
+          flex-grow: 1;
         }
 
         .listItemTitle {
@@ -42,6 +101,15 @@
           font-weight: 500;
           line-height: 29.3px;
           color: $color-main;
+
+          @media (max-width: 600px) {
+            margin-bottom: 10px;
+          }
+          @media (max-width: $small-mobile) {
+            margin-bottom: 5px;
+            font-size: 22px;
+            line-height: 26px;
+          }
         }
 
         .listItemText {
@@ -50,6 +118,11 @@
             font-weight: 300;
             line-height: 29.7px;
             color: $color-abbey;
+
+            @media (max-width: $small-mobile) {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
       }
@@ -57,8 +130,23 @@
       .image {
         width: 50%;
 
+        @media (max-width: $media-tablet) {
+          display: flex;
+          order: 1;
+          height: 500px;
+          width: 400px;
+        }
+        @media (max-width: $media-tablet) {
+          height: 400px;
+          width: 300px;
+        }
+
         img {
           width: 100%;
+
+          @media (max-width: $media-tablet) {
+            height: 100%;
+          }
         }
       }
     }

@@ -1,5 +1,8 @@
+@import '../styles/_variables.scss';
+
 .backToTopButton {
   position: fixed;
+  z-index: 100;
   bottom: -100px;
   right: 50px;
   width: 65px;
@@ -10,8 +13,18 @@
   transition: all .3s linear;
   cursor: pointer;
 
+  @media (max-width: $small_mobile) {
+    right: 30px;
+    width: 60px;
+    height: 60px;
+  }
+
   &.backToTopButtonActive {
     bottom: 50px;
+
+    @media (max-width: $small_mobile) {
+      bottom: 30px;
+    }
   }
 
   img {

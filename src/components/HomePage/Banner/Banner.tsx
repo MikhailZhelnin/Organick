@@ -16,7 +16,7 @@ export const Banner = () => {
                 <div className={styles.content}>
                     <span className={`${styles.overhead} ${yellowtail.className}`}>100% Natural Food</span>
                     <h1 className={styles.title}>Choose the best healthier way of life</h1>
-                  <Button btnType='secondary' text='Explore Now'/>
+                  <Button btnType='secondary' text='Explore Now' asLink link='/about-us'/>
                 </div>
             </div>
         </section>

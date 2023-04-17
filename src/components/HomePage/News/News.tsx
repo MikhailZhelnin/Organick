@@ -23,7 +23,7 @@ export const News = ({news}: NewsProps) => {
               marginBottom='0px'
               maxWidth='702px'
             />
-            <Button btnType='third' text='More News' asLink link='/'/>
+            <Button btnType='third' text='More News' asLink link='/news'/>
           </div>
           <NewsList newsList={news}/>
         </div>
