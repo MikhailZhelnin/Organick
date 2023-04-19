@@ -11,7 +11,7 @@
     margin: 80px 0 80px;
   }
   @media (max-width: $small-mobile) {
-    margin: 50px 0 50px;
+    margin: 30px 0 30px;
   }
 
   .container {
@@ -45,7 +45,9 @@
           height: 400px;
         }
         @media (max-width: $small-mobile) {
-          height: 350px;
+          margin: 0 auto 25px;
+          width: 80%;
+          height: 280px;
         }
 
         img {
@@ -74,8 +76,8 @@
             line-height: 50px;
           }
           @media (max-width: $small-mobile) {
-            font-size: 35px;
-            line-height: 40px;
+            font-size: 30px;
+            line-height: 34px;
           }
         }
 
@@ -138,8 +140,8 @@
               border-radius: 11px;
 
               @media (max-width: $small-mobile) {
-                width: 80px;
-                height: 80px;
+                width: 70px;
+                height: 70px;
               }
 
               img {
@@ -147,6 +149,10 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+
+                @media (max-width: $small-mobile) {
+                  height: 30px;
+                }
               }
             }
 
@@ -158,8 +164,8 @@
                 color: $color-main;
 
                 @media (max-width: $small-mobile) {
-                  font-size: 22px;
-                  line-height: 27px;
+                  font-size: 20px;
+                  line-height: 25px;
                 }
               }
 

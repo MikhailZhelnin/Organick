@@ -13,8 +13,8 @@
     padding: 80px 0;
   }
   @media (max-width: $small-mobile) {
-    margin-bottom: 60px;
-    padding: 50px 0;
+    margin-bottom: 40px;
+    padding: 30px 0;
   }
 
   .container {
@@ -40,6 +40,11 @@
           .topLeftText {
             margin-bottom: 36px;
 
+            @media (max-width: $small-mobile) {
+              margin-top: -15px;
+              margin-bottom: 15px;
+            }
+
             p {
               font-size: $size-text-main;
               font-weight: 300;
@@ -48,7 +53,7 @@
 
               @media (max-width: $small-mobile) {
                 font-size: 16px;
-                line-height: 23px;
+                line-height: 21px;
               }
             }
           }
@@ -62,7 +67,7 @@
               align-items: flex-start;
 
               @media (max-width: $media-mobile) {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
               }
 
               &:last-child {
@@ -93,8 +98,8 @@
                   color: $color-main;
 
                   @media (max-width: $small-mobile) {
-                    font-size: 18px;
-                    line-height: 25px;
+                    font-size: 17px;
+                    line-height: 22px;
                   }
                 }
               }
@@ -108,7 +113,7 @@
 
                   @media (max-width: $small-mobile) {
                     font-size: 16px;
-                    line-height: 23px;
+                    line-height: 21px;
                   }
                 }
               }
@@ -174,8 +179,8 @@
               margin-bottom: 40px;
             }
             @media (max-width: $small_mobile) {
-              padding: 30px 20px;
-              width: 80%;
+              padding: 20px 15px;
+              width: 70%;
               margin-bottom: 20px;
             }
 
@@ -187,11 +192,21 @@
               border-radius: 20px;
               background-color: #F9F8F8;
 
+              @media (max-width: $small_mobile) {
+                margin-bottom: 10px;
+                width: 75px;
+                height: 75px;
+              }
+
               .bottomListItemIconIcon {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+
+                @media (max-width: $small_mobile) {
+                  height: 40px;
+                }
               }
             }
 
@@ -205,6 +220,7 @@
               text-align: center;
 
               @media (max-width: $small_mobile) {
+                margin-bottom: 5px;
                 font-size: 20px;
                 line-height: 25px;
               }
@@ -221,7 +237,7 @@
 
                 @media (max-width: $small_mobile) {
                   font-size: 16px;
-                  line-height: 23px;
+                  line-height: 21px;
                 }
               }
             }

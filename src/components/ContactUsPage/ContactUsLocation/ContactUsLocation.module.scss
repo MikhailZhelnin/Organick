@@ -8,7 +8,7 @@
     margin-bottom: 80px;
   }
   @media (max-width: $small-mobile) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .container {
@@ -43,7 +43,7 @@
           padding: 36px 43px;
         }
         @media (max-width: $small-mobile) {
-          padding: 25px;
+          padding: 20px;
         }
 
         .infoOverhead {
@@ -52,8 +52,8 @@
           color: $color-acapulco;
 
           @media (max-width: $small-mobile) {
-            font-size: 28px;
-            line-height: 35px;
+            font-size: 23px;
+            line-height: 28px;
           }
         }
 
@@ -70,8 +70,8 @@
           }
           @media (max-width: $small-mobile) {
             margin-bottom: 5px;
-            font-size: 35px;
-            line-height: 40px;
+            font-size: 30px;
+            line-height: 35px;
           }
         }
 
@@ -90,7 +90,7 @@
 
             @media (max-width: $small-mobile) {
               font-size: 16px;
-              line-height: 22px;
+              line-height: 21px;
             }
           }
         }
@@ -100,6 +100,10 @@
             margin-bottom: 22px;
             display: flex;
             align-items: flex-start;
+
+            @media (max-width: $small-mobile) {
+              margin-bottom: 10px;
+            }
 
             &:last-child {
               margin-bottom: 0;

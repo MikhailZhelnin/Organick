@@ -11,7 +11,7 @@
     padding-bottom: 80px;
   }
   @media (max-width: $small-mobile) {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   .container {
@@ -50,6 +50,10 @@
           z-index: 2;
           background-color: rgba(255, 255, 255, 0.85);
 
+          @media (max-width: $small-mobile) {
+            padding: 15px 15px;
+          }
+
           .topInfoUser {
             margin-bottom: 10px;
 
@@ -85,8 +89,9 @@
             font-size: $size-heading-h5;
 
             @media (max-width: $small-mobile) {
-              font-size: 25px;
-              line-height: 30px;
+              margin-bottom: 5px;
+              font-size: 22px;
+              line-height: 26px;
             }
           }
 
@@ -98,7 +103,7 @@
 
               @media (max-width: $small-mobile) {
                 font-size: 16px;
-                line-height: 22px;
+                line-height: 21px;
               }
             }
           }
@@ -122,8 +127,8 @@
           }
           @media (max-width: $small-mobile) {
             margin-bottom: 15px;
-            font-size: 35px;
-            line-height: 40px;
+            font-size: 30px;
+            line-height: 35px;
           }
         }
 
@@ -155,7 +160,7 @@
           }
           @media (max-width: $small-mobile) {
             font-size: 16px;
-            line-height: 22px;
+            line-height: 21px;
           }
         }
 

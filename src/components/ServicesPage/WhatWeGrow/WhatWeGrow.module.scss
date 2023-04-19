@@ -11,7 +11,7 @@
     padding: 80px 0;
   }
   @media (max-width: $small-mobile) {
-    padding: 50px 0;
+    padding: 30px 0;
   }
 
   .container {
@@ -107,7 +107,7 @@
           }
           @media (max-width: $small-mobile) {
             margin-bottom: 5px;
-            font-size: 22px;
+            font-size: 21px;
             line-height: 26px;
           }
         }
@@ -121,7 +121,7 @@
 
             @media (max-width: $small-mobile) {
               font-size: 16px;
-              line-height: 22px;
+              line-height: 21px;
             }
           }
         }

@@ -21,7 +21,7 @@
   @media (max-width: $small-mobile) {
     padding: 50px 0;
     margin-bottom: 50px;
-    height: 550px;
+    height: 450px;
   }
 
   .container {
@@ -40,12 +40,20 @@
         @media (max-width: $media-mobile) {
           margin-bottom: 30px;
         }
+        @media (max-width: $small-mobile) {
+          margin-bottom: 20px;
+        }
 
         p {
           font-size: $size-text-main;
           font-weight: 300;
           line-height: 29.7px;
           color: $color-abbey;
+
+          @media (max-width: $small-mobile) {
+            font-size: 16px;
+            line-height: 21px;
+          }
         }
       }
 
@@ -59,8 +67,8 @@
         cursor: pointer;
 
         @media (max-width: $small-mobile) {
-          width: 90px;
-          height: 90px;
+          width: 70px;
+          height: 70px;
         }
 
         .playButtonIcon {

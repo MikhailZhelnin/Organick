@@ -99,7 +99,7 @@ const ContactUsForm = () => {
                   {...register("message")}
                   id='message'
                   placeholder="Hello there,i would like to talk about how to..."
-                  rows={7}
+                  rows={5}
                   className={!errors.message ? `${styles.formGroupItemTextarea}` : `${styles.formGroupItemTextarea} ${styles.formGroupItemTextareaError}`}
                 />
                 {errors?.message &&

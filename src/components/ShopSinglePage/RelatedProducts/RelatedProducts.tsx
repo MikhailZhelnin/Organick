@@ -14,7 +14,9 @@ const RelatedProducts = ({products}: RelatedProductsProps) => {
     <section className={styles.relatedProducts}>
       <div className={styles.container}>
         <SectionHeading title='Related Products'/>
-        <Products products={products}/>
+        <div className={styles.products}>
+          <Products products={products}/>
+        </div>
       </div>
     </section>
   )

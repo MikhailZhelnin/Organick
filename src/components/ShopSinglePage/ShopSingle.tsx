@@ -54,7 +54,9 @@ const ShopSingle = ({product}: ShopSingleProps) => {
                     className={styles.topInfoActionInput}
                   />
                 </div>
-                <Button btnType='main' text='Add To Cart'/>
+                <div className={styles.topInfoActionButton}>
+                  <Button btnType='main' text='Add To Cart'/>
+                </div>
               </div>
             </div>
           </div>
