@@ -16,14 +16,16 @@ export const Categories = ({products}: CategoriesProps) => {
           <div className={styles.container}>
             <div className={styles.content}>
               <SectionHeading overhead='Categories' title='Our Products'/>
-              <Products products={products}/>
-              <div className={styles.button}>
-                <Button
-                  btnType='main'
-                  text='Load More'
-                  asLink
-                  link='/shop'
-                />
+              <div className={styles.margin}>
+                <Products products={products}/>
+                <div className={styles.button}>
+                  <Button
+                    btnType='main'
+                    text='Load More'
+                    asLink
+                    link='/shop'
+                  />
+                </div>
               </div>
             </div>
           </div>

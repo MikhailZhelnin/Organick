@@ -27,7 +27,8 @@
     color: $color-main;
 
     @media (max-width: $small-mobile) {
-      font-size: 18px;
+      margin-right: 10px;
+      font-size: 16px;
     }
   }
   .buttonIcon {

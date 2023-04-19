@@ -36,6 +36,9 @@
           width: 100%;
           height: 300px;
         }
+        @media (max-width: $small-mobile) {
+          height: 200px;
+        }
 
         .listItemImage {
           width: 100%;
@@ -69,8 +72,8 @@
             height: 90px;
           }
           @media (max-width: $small-mobile) {
-            max-width: 250px;
-            height: 90px;
+            width: 200px;
+            height: 70px;
           }
 
           .listItemContentTitle {
@@ -78,6 +81,11 @@
             font-weight: 500;
             line-height: 29.3px;
             color: $color-main;
+
+            @media (max-width: $small-mobile) {
+              font-size: 21px;
+              line-height: 25px;
+            }
           }
         }
       }

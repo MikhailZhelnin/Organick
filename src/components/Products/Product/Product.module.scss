@@ -11,6 +11,12 @@
   overflow: hidden;
   transition: border-color .2s ease-in-out;
 
+  @media (max-width: $small-mobile) {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 420px;
+  }
+
   &:hover {
     border-color: #B8B8B8;
 
@@ -30,11 +36,20 @@
     background-color: $color-main;
     border-radius: 10px;
 
+    @media (max-width: $small-mobile) {
+      left: 20px;
+      padding: 5px 10px;
+    }
+
     .productCategoryText {
       font-size: 15px;
       line-height: 20px;
       font-weight: 500;
       color: #FFFFFF;
+
+      @media (max-width: $small-mobile) {
+        font-size: 12px;
+      }
     }
   }
 
@@ -56,6 +71,11 @@
     left: 30px;
     z-index: 5;
     width: 81%;
+
+    @media (max-width: $small-mobile) {
+      left: 20px;
+      width: 87%;
+    }
 
     .productInfoTitle {
       position: relative;

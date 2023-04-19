@@ -25,7 +25,9 @@ export const News = ({news}: NewsProps) => {
             />
             <Button btnType='third' text='More News' asLink link='/news'/>
           </div>
-          <NewsList newsList={news}/>
+          <div className={styles.newsList}>
+            <NewsList newsList={news}/>
+          </div>
         </div>
       </div>
     </section>

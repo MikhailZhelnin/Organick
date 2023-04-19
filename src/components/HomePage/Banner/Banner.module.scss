@@ -12,10 +12,10 @@
     padding: 140px 0;
   }
   @media (max-width: $media-mobile) {
-    padding: 130px 0;
+    padding: 120px 0;
   }
   @media (max-width: $small-mobile) {
-    padding: 100px 0;
+    padding: 90px 0;
   }
 
   .container {
@@ -53,16 +53,17 @@
           line-height: 75px;
         }
         @media (max-width: $media-mobile) {
-          font-size: 60px;
-          line-height: 70px;
+          font-size: 50px;
+          line-height: 55px;
         }
         @media (max-width: $small-mobile) {
-          font-size: 50px;
-          line-height: 60px;
-        }
-        @media (max-width: 400px) {
+          margin-bottom: 10px;
           font-size: 40px;
           line-height: 45px;
+        }
+        @media (max-width: 400px) {
+          font-size: 35px;
+          line-height: 40px;
         }
       }
 

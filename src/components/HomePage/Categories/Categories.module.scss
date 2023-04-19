@@ -10,13 +10,20 @@
     padding: 80px 0;
   }
   @media (max-width: $small-mobile) {
-    padding: 50px 0;
+    padding: 20px 0 30px 0;
   }
 
   .container {
     @include container;
 
     .content {
+
+      .margin {
+        @media (max-width: $small-mobile) {
+          margin-top: -25px;
+        }
+      }
+
       .button {
         display: flex;
         justify-content: center;
