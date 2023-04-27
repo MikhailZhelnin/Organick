@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {useState} from "react";
 import {Rating} from "react-simple-star-rating";
-import {useSnackbar} from 'react-simple-snackbar';
+import { useSnackbar } from 'notistack';
 
 import Button from "@/components/Shared/Button/Button";
 
@@ -18,16 +18,16 @@ interface ShopSingleProps {
 
 const ShopSingle = ({product}: ShopSingleProps) => {
 
+  const { enqueueSnackbar } = useSnackbar();
+
   const [activeTab, setActiveTab] = useState(1);
 
   const {addProduct} = useActions();
 
-  const [openSnackbar, closeSnackbar] = useSnackbar()
-
   const toggleActiveTab = (index: number) => setActiveTab(index);
 
   const addToCartHandler = () => {
-    openSnackbar(`${product.title} added to cart`);
+    enqueueSnackbar(`${product.title} added to cart`)
     addProduct(product);
   }
 

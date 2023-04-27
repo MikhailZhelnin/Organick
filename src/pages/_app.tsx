@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import {Provider} from "react-redux";
 import {store, wrapper} from "../store/store";
-import SnackbarProvider from 'react-simple-snackbar';
+import { SnackbarProvider } from 'notistack';
 
 import '@/styles/globals.scss'
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {useSnackbar} from 'react-simple-snackbar';
+import { useSnackbar } from 'notistack';
 
 import {Main} from "@/templates/Main";
 import {Meta} from "@/layout/Meta";
@@ -17,13 +17,14 @@ import styles from '../styles/CartPage.module.scss'
 
 export default function ShoppingCartPage() {
 
+  const { enqueueSnackbar } = useSnackbar();
+
   const {cartItems, totalAmount, totalQuantity} = useTypedSelector(state => state.cart);
   const {decrementQuantity, incrementQuantity, removeProduct} = useActions();
-  const [openSnackbar, closeSnackbar] = useSnackbar()
 
-  const removeFromCartHandle = (item: IProduct) => {
-    openSnackbar(`${item.title} removed from cart`);
-    removeProduct(item);
+  const removeFromCartHandle = (product: IProduct) => {
+    enqueueSnackbar(`${product.title} removed from cart`)
+    removeProduct(product);
   }
 
   return (
