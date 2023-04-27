@@ -36,4 +36,7 @@ export const icons = {
   mail: require('./Mail.svg').default,
   phone: require('./Phone.svg').default,
   toTop: require('./ToTop.svg').default,
+  close: require('./Close.svg').default,
+  minus: require('./Minus.svg').default,
+  plus: require('./Plus.svg').default,
 }

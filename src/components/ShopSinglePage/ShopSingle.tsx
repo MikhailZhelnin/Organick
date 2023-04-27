@@ -1,10 +1,12 @@
 import Image from "next/image";
 import {useState} from "react";
 import {Rating} from "react-simple-star-rating";
+import {useSnackbar} from 'react-simple-snackbar';
 
 import Button from "@/components/Shared/Button/Button";
 
 import {urlFor} from "@/helpers/urlFor";
+import {useActions} from "@/hooks/useActions";
 
 import {IProduct} from "@/global/interfaces";
 
@@ -16,10 +18,18 @@ interface ShopSingleProps {
 
 const ShopSingle = ({product}: ShopSingleProps) => {
 
-  const [quantity, setQuantity] = useState('1');
   const [activeTab, setActiveTab] = useState(1);
 
+  const {addProduct} = useActions();
+
+  const [openSnackbar, closeSnackbar] = useSnackbar()
+
   const toggleActiveTab = (index: number) => setActiveTab(index);
+
+  const addToCartHandler = () => {
+    openSnackbar(`${product.title} added to cart`);
+    addProduct(product);
+  }
 
   return (
     <div className={styles.shopSingle}>
@@ -42,21 +52,8 @@ const ShopSingle = ({product}: ShopSingleProps) => {
               <div className={styles.topInfoText}>
                 <p>{product.text}</p>
               </div>
-              <div className={styles.topInfoAction}>
-                <div>
-                  <span className={styles.topInfoActionText}>Quantity:</span>
-                  <input
-                    type="text"
-                    pattern="\d*"
-                    maxLength={1}
-                    value={quantity}
-                    onChange={(e) => setQuantity(e.target.value)}
-                    className={styles.topInfoActionInput}
-                  />
-                </div>
-                <div className={styles.topInfoActionButton}>
-                  <Button btnType='main' text='Add To Cart'/>
-                </div>
+              <div className={styles.topInfoButton}>
+                <Button btnType='main' text='Add To Cart' btnAction={addToCartHandler}/>
               </div>
             </div>
           </div>

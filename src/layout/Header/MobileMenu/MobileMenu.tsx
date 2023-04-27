@@ -1,9 +1,12 @@
-import styles from "./MobileMenu.module.scss";
-import {menuItemsData} from "@/data";
+import Image from "next/image";
 import Link from "next/link";
 import {useState} from "react";
-import Image from "next/image";
+
+import {menuItemsData} from "@/data";
 import {icons} from "../../../../public/assets/icons/icons";
+import {useTypedSelector} from "@/hooks/useTypedSelector";
+
+import styles from "./MobileMenu.module.scss";
 
 interface MobileMenuProps {
   active: boolean,
@@ -12,6 +15,7 @@ interface MobileMenuProps {
 const MobileMenu = ({active}: MobileMenuProps) => {
 
   const [openedSubmenu, setOpenedSubmenu] = useState(false);
+  const {totalQuantity} = useTypedSelector(state => state.cart)
 
   return (
     <div className={!active ? styles.mobileMenu : `${styles.mobileMenu} ${styles.mobileMenuActive}`}>
@@ -46,6 +50,12 @@ const MobileMenu = ({active}: MobileMenuProps) => {
               </li>
             ))}
           </ul>
+            <div className={styles.cart}>
+              <Link href='/cart' className={styles.cartButton}>
+                <Image src={icons.cart} alt='Cart icon'/>
+              </Link>
+              <span className={styles.cartAmount}>Cart ({totalQuantity})</span>
+            </div>
         </div>
       </div>
     </div>

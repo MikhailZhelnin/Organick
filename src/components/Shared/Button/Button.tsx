@@ -12,9 +12,10 @@ interface ButtonProps {
   icon?: boolean
   asLink?: boolean
   link?: string
+  btnAction?(): void
 }
 
-const Component = ({btnType, text, icon = true, asLink = false, link}: ButtonProps) => {
+const Component = ({btnType, text, icon = true, asLink = false, link, btnAction}: ButtonProps) => {
   return (
     <>
       {!asLink ? (
@@ -28,6 +29,7 @@ const Component = ({btnType, text, icon = true, asLink = false, link}: ButtonPro
                   `${styles.button} ${styles.buttonThird}` :
                   ''
           }
+          onClick={btnAction}
         >
           <span className={styles.buttonText}>{text}</span>
           {icon && <div className={styles.buttonIcon}>

@@ -17,6 +17,8 @@ export interface IProduct {
   rating: number
   title: string
   text?: string,
-  description?: string,
-  additionalInfo?: string,
+  description?: string
+  additionalInfo?: string
+  quantity?: number
+  totalPrice?: number
 }

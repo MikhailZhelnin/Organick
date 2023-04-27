@@ -3,17 +3,20 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 
 import Navbar from "@/layout/Header/Navbar/Navbar";
+import MobileMenu from "@/layout/Header/MobileMenu/MobileMenu";
 
 import {icons} from "../../../public/assets/icons/icons";
 import {menuItemsData} from "@/data";
+import {useTypedSelector} from "@/hooks/useTypedSelector";
 
 import styles from './Header.module.scss'
-import MobileMenu from "@/layout/Header/MobileMenu/MobileMenu";
 
 const Header = () => {
 
-  const [activeBurger,setActiveBurger] = useState(false);
-  const [activeMobileMenu,setActiveMobileMenu] = useState(false);
+  const [activeBurger, setActiveBurger] = useState(false);
+  const [activeMobileMenu, setActiveMobileMenu] = useState(false);
+
+  const {totalQuantity} = useTypedSelector(state => state.cart)
 
   const handleToggle = () => {
     setActiveBurger(!activeBurger);
@@ -38,21 +41,14 @@ const Header = () => {
             <Image src={icons.logo} alt='Logo icon'/>
           </Link>
           <Navbar items={menuItemsData}/>
-          <div className={styles.actions}>
-            <form className={styles.actionsSearch}>
-              <input type='text' className={styles.actionsSearchInput}/>
-              <button className={styles.actionsSearchButton}>
-                <Image src={icons.search} alt='Search icon'/>
-              </button>
-            </form>
-            <div className={styles.actionsCart}>
-              <button className={styles.actionsCartButton}>
-                <Image src={icons.cart} alt='Cart icon'/>
-              </button>
-              <span className={styles.actionsCartAmount}>Cart (0)</span>
-            </div>
+          <div className={styles.cart}>
+            <Link href='/cart' className={styles.cartButton}>
+              <Image src={icons.cart} alt='Cart icon'/>
+            </Link>
+            <span className={styles.cartAmount}>Cart ({totalQuantity})</span>
           </div>
-          <div className={!activeBurger ? `${styles.burgerMenu}` : `${styles.burgerMenu} ${styles.burgerMenuActive}`} onClick={handleToggle}>
+          <div className={!activeBurger ? `${styles.burgerMenu}` : `${styles.burgerMenu} ${styles.burgerMenuActive}`}
+               onClick={handleToggle}>
             <span/>
           </div>
         </div>

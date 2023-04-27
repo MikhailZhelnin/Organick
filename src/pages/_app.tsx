@@ -1,6 +1,18 @@
-import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
+import {Provider} from "react-redux";
+import {store, wrapper} from "../store/store";
+import SnackbarProvider from 'react-simple-snackbar';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import '@/styles/globals.scss'
+
+function App({ Component, pageProps }: AppProps) {
+  return (
+    <Provider store={store}>
+      <SnackbarProvider>
+        <Component {...pageProps} />
+      </SnackbarProvider>
+    </Provider>
+  )
 }
+
+export default wrapper.withRedux(App)

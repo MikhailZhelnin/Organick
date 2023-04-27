@@ -68,6 +68,46 @@
           }
         }
       }
+
+        .cart {
+          padding-left: 8px;
+          display: flex;
+          align-items: center;
+          width: 159px;
+          height: 66px;
+          border: 1px solid $color-main;
+          border-radius: 36px;
+
+          .cartButton {
+            position: relative;
+            margin-right: 12px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: $color-main;
+            border: none;
+            cursor: pointer;
+            transition: background-color .2s ease-in-out;
+
+            &:hover {
+              background-color: #152a33;
+            }
+
+            img {
+              position: absolute;
+              top: 50%;
+              left: 48%;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          .cartAmount {
+            font-size: $size-text-main;
+            font-weight: 500;
+            color: $color-main;
+          }
+        }
+
     }
   }
 }

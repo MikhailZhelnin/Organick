@@ -38,66 +38,7 @@
         }
       }
 
-      .actions {
-        display: flex;
-        align-items: center;
-
-        .actionsSearch {
-          position: relative;
-          margin-right: 18px;
-          padding-left: 15px;
-          width: 376px;
-          height: 66px;
-          overflow: hidden;
-          border-radius: 36px;
-          display: flex;
-          align-items: center;
-          background-color: #FAFAFA;
-
-          @media (max-width: 1300px) {
-            width: 300px;
-          }
-          @media (max-width: 1200px) {
-            display: none;
-          }
-
-          .actionsSearchInput {
-            display: inline-flex;
-            width: 80%;
-            font-size: $size-text-main;
-            color: $color-main;
-            background-color: transparent;
-            border: none;
-            outline: none;
-          }
-
-          .actionsSearchButton {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 8px;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background-color: $color-acapulco;
-            border: none;
-            cursor: pointer;
-            transition: background-color .2s ease-in-out;
-
-            &:hover {
-              background-color: #5aa174;
-            }
-
-            img {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-          }
-        }
-
-        .actionsCart {
+        .cart {
           padding-left: 8px;
           display: flex;
           align-items: center;
@@ -106,7 +47,11 @@
           border: 1px solid $color-main;
           border-radius: 36px;
 
-          .actionsCartButton {
+          @media (max-width: $media-tablet) {
+            display: none;
+          }
+
+          .cartButton {
             position: relative;
             margin-right: 12px;
             width: 56px;
@@ -129,17 +74,12 @@
             }
           }
 
-          .actionsCartAmount {
+          .cartAmount {
             font-size: $size-text-main;
             font-weight: 500;
             color: $color-main;
           }
         }
-
-        @media (max-width: $media-tablet) {
-          display: none;
-        }
-      }
 
       .burgerMenu {
         position: relative;
