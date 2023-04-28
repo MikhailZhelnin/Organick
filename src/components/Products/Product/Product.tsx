@@ -25,7 +25,6 @@ const Product = ({product}: ProductProps) => {
         <div className={styles.productInfoBottom}>
           <div className={styles.productInfoBottomLeft}>
             <span className={styles.productInfoBottomLeftPrice}>${product.price}</span>
-            <span className={styles.productInfoBottomLeftDiscount}>${product.price - product.discount}</span>
           </div>
           <Rating initialValue={product.rating} readonly size={18}/>
         </div>

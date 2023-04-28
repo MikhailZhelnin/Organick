@@ -47,7 +47,6 @@ const ShopSingle = ({product}: ShopSingleProps) => {
               <Rating initialValue={product.rating} readonly size={18} className={styles.topInfoRating}/>
               <div className={styles.topInfoPrice}>
                 <span className={styles.topInfoPricePrice}>${product.price}</span>
-                <span className={styles.topInfoPriceDiscount}>${product.price - product.discount}</span>
               </div>
               <div className={styles.topInfoText}>
                 <p>{product.text}</p>

@@ -39,11 +39,6 @@ export default {
             type: 'number',
         },
         {
-            name: 'discount',
-            title: 'Discount',
-            type: 'number',
-        },
-        {
             name: 'rating',
             title: 'Rating',
             type: 'number',
@@ -51,6 +46,11 @@ export default {
         {
             name: 'category',
             title: 'Category',
+            type: 'string',
+        },
+        {
+            name: 'color',
+            title: 'Color',
             type: 'string',
         },
     ],

@@ -4,10 +4,9 @@ import SectionHeading from "@/components/Shared/SectionHeading/SectionHeading";
 
 import {icons} from "../../../../public/assets/icons/icons";
 import {images} from "../../../../public/assets/images/images";
+import {whyChooseUsFeatures} from "@/data";
 
 import styles from './WhyChooseUs.module.scss'
-
-import {whyChooseUsFeatures} from "@/data";
 
 const Component = () => {
   return (

@@ -14,4 +14,134 @@
     margin-top: 50px;
     margin-bottom: 10px;
   }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media (max-width: $media-mobile) {
+      flex-direction: column;
+    }
+
+    .showFiltersButton {
+      display: none;
+
+      @media (max-width: $media-mobile) {
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: inherit;
+        border: none;
+        border-radius: 10px;
+        background-color: $color-main;
+        color: white;
+      }
+    }
+
+    .filters {
+      margin-right: 40px;
+      padding: 20px;
+      min-width: 280px;
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      border: 1px solid $color-alto;
+      border-radius: 16px;
+
+      &.filtersShow {
+        display: flex;
+      }
+
+      @media (min-width: $media-mobile) {
+        display: flex;
+      }
+
+      @media (max-width: $media-mobile) {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .filtersGroup {
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .filtersGroupSearch {
+          padding: 10px;
+          font-size: 18px;
+          outline: none;
+          color: $color-main;
+          border: 1px solid $color-alto;
+          border-radius: 10px;
+
+          &::placeholder {
+            color: $color-main;
+          }
+        }
+
+        .filtersGroupTitle {
+          margin-bottom: 10px;
+          font-size: 22px;
+          line-height: 27px;
+          font-weight: 700;
+          color: $color-main;
+        }
+
+        .filtersGroupItem {
+          display: flex;
+          margin-bottom: 5px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .filtersGroupItemInput {
+            margin-right: 10px;
+          }
+
+          .filtersGroupItemLabel {
+            font-size: 17px;
+            line-height: 22px;
+            color: $color-abbey;
+          }
+        }
+      }
+
+      .filtersClearButton {
+        padding: 10px 15px;
+        font-size: 18px;
+        font-family: inherit;
+        border: none;
+        border-radius: 10px;
+        background-color: $color-main;
+        color: white;
+        cursor: pointer;
+        transition: background-color .2s ease-in-out;
+
+        &:hover {
+          background-color: #152a33;
+        }
+      }
+    }
+
+    .products {
+      width: 100%;
+
+      .productsTitle {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 30px;
+        color: $color-main;
+      }
+    }
+  }
 }

@@ -25,12 +25,12 @@ export const cart = createSlice({
 
       if (itemInCart && itemInCart?.quantity && itemInCart?.totalPrice) {
         itemInCart.quantity++;
-        itemInCart.totalPrice = Number(itemInCart.totalPrice) + Number(action.payload.discount ? action.payload.price - action.payload.discount : action.payload.price)
+        itemInCart.totalPrice = Number(itemInCart.totalPrice) + Number(action.payload.price)
       } else {
-        state.cartItems.push({ ...action.payload, quantity: 1, totalPrice: action.payload.discount ? action.payload.price - action.payload.discount : action.payload.price});
+        state.cartItems.push({ ...action.payload, quantity: 1, totalPrice: action.payload.price});
       }
       state.totalAmount = state.cartItems.reduce(
-        (total, item) => total + Number(item.discount ? item.price - item.discount : item.price) * Number(item.quantity),
+        (total, item) => total + Number(item.price) * Number(item.quantity),
         0,
       );
     },
@@ -38,10 +38,10 @@ export const cart = createSlice({
       const item = state.cartItems.find(item => item.id === action.payload.id);
       if (item?.quantity && item.totalPrice) {
         item.quantity++;
-        item.totalPrice = item.discount ? item.totalPrice + (item.price - item.discount) : item.totalPrice + item.price
+        item.totalPrice = item.totalPrice + item.price
 
         state.totalQuantity++;
-        state.totalAmount = item.discount ? state.totalAmount + (item.discount ? item.price - item.discount : item.price) : state.totalAmount + item.price
+        state.totalAmount = state.totalAmount + item.price
       }
 
     },
@@ -53,9 +53,9 @@ export const cart = createSlice({
       }
       if (item?.totalPrice && item?.quantity && item?.quantity > 1) {
         item.quantity--;
-        item.totalPrice = item.discount ? item.totalPrice - (item.price - item.discount) : item.totalPrice - item.price;
+        item.totalPrice = item.totalPrice - item.price;
         state.totalQuantity--;
-        state.totalAmount = item.discount ? state.totalAmount - (item.discount ? item.price - item.discount : item.price) : state.totalAmount - item.price
+        state.totalAmount = state.totalAmount - item.price
       }
     },
     removeProduct: (state, action: PayloadAction<{id: string}>) => {

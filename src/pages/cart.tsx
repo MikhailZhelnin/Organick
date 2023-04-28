@@ -56,14 +56,9 @@ export default function ShoppingCartPage() {
                         </div>
                         <div className={styles.bagItemsListItemCenter}>
                           <div className={styles.bagItemsListItemCenterPrices}>
-                            <span className={!item.discount ? styles.bagItemsListItemCenterPricesPrice : `${styles.bagItemsListItemCenterPricesPrice} ${styles.bagItemsListItemCenterPricesPriceOld}`}>
+                            <span className={styles.bagItemsListItemCenterPricesPrice}>
                               ${item.price}
                             </span>
-                            {item.discount &&
-                                <span className={styles.bagItemsListItemCenterPricesDiscount}>
-                                  ${item.price - item.discount}
-                                </span>
-                            }
                           </div>
                           <div className={styles.bagItemsListItemCenterActions}>
                             <button className={styles.bagItemsListItemCenterActionsMinus}

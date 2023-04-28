@@ -10,13 +10,13 @@ export interface Image {
 
 export interface IProduct {
   category: string
-  discount: number
   id: string
   image: Image
   price: number
   rating: number
   title: string
-  text?: string,
+  color: string
+  text?: string
   description?: string
   additionalInfo?: string
   quantity?: number
