@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useSnackbar } from 'notistack';
 
 import {Main} from "@/templates/Main";
@@ -49,10 +50,10 @@ export default function ShoppingCartPage() {
                     {cartItems.map(item => (
                       <li key={item.id} className={styles.bagItemsListItem}>
                         <div className={styles.bagItemsListItemLeft}>
-                          <div className={styles.bagItemsListItemLeftImage}>
+                          <Link href={`/shop/${item.title}`} className={styles.bagItemsListItemLeftImage}>
                             <Image src={urlFor(item.image).url()} alt={item.title} width={120} height={153}/>
-                          </div>
-                          <span className={styles.bagItemsListItemLeftTitle}>{item.title}</span>
+                          </Link>
+                          <Link href={`/shop/${item.title}`} className={styles.bagItemsListItemLeftTitle}>{item.title}</Link>
                         </div>
                         <div className={styles.bagItemsListItemCenter}>
                           <div className={styles.bagItemsListItemCenterPrices}>
